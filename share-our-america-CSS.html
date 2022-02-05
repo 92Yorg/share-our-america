@@ -2,7 +2,7 @@
 <style type="text/css">
 
     .global-container, body {
-      background-color: var(--slategreydark);
+      background-color: #f1f2f2;
     }
 
     .formaDJRdisplayRegular,
@@ -213,6 +213,15 @@
   }
 }
 
+.share-wrapper p.page-intro-2 .btn {
+    background-color: var(--blue3);
+    color: var(--slategreydark);
+}
+
+.share-wrapper p.page-intro-2 .btn:hover {
+  background-color: var(--blue2)
+}
+
 #share-top {
   position: relative;
   overflow: hidden;
@@ -281,13 +290,13 @@
   position: relative;
 }
 
-#share-about .o-grid__item:first-child {
+/* #share-about .o-grid__item:first-child {
   z-index: 1;
 }
 
 #share-about .o-grid__item:nth-child(2) {
   z-index: 2;
-}
+} */
 
 @media (min-width: 480px) and (max-width: 799.99px) {
     #share-about .o-figure {
@@ -348,6 +357,10 @@
   #share-inclusions2 .u-constrained {
     padding: 2em;
   }
+}
+
+#share-inclusions2 li {
+  margin-bottom: .5em;
 }
 
 #share-form {
@@ -434,7 +447,7 @@
 
  @media (max-width: 479.99px) {
   .shape-bg3 {
-    top: 10%;
+    top: 12%;
     right: -90%;
   }
 }
