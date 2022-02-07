@@ -195,7 +195,32 @@
   }
 }
 
-@media (min-width: 30em) {
+#share-info {
+  /* border: 3px solid var(--blue2); */
+  background: var(--grey2);
+  padding: 16px 20px;
+}
+
+@media (min-width: 40em) {
+  #share-info {
+    margin-left: 10px;
+    display: inline-block;
+  }
+}
+
+@media (min-width: 50em) {
+  #share-info {
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 70em) {
+  #share-info {
+    margin-left: 40px;
+  }
+}
+
+/* @media (min-width: 30em) {
   .share-wrapper p.page-intro-2 {
     margin-left: 20px;
   }
@@ -211,14 +236,14 @@
   .share-wrapper p.page-intro-2 {
     margin-left: 60px;
   }
-}
+} */
 
-.share-wrapper p.page-intro-2 .btn {
+.share-wrapper #share-info .btn {
     background-color: var(--blue3);
     color: var(--slategreydark);
 }
 
-.share-wrapper p.page-intro-2 .btn:hover {
+.share-wrapper #share-info .btn:hover {
   background-color: var(--blue2)
 }
 
@@ -440,21 +465,21 @@
  .shape-bg3 {
    position: absolute;
    height: 80%;
-   top: 5%;
+   top: -20%;
    right: 4%;
    opacity: 0.6;
  }
 
  @media (max-width: 479.99px) {
   .shape-bg3 {
-    top: 12%;
+    /* top: 12%; */
     right: -90%;
   }
 }
 
- @media (min-width: 480px) and (max-width: 1100px) {
+ @media (min-width: 480px) and (max-width: 1150px) {
   .shape-bg3 {
-    top: 20%;
+    top: -36%;
     right: -10%;
   }
 }
