@@ -1,0 +1,605 @@
+<link rel="stylesheet" href="https://use.typekit.net/mjn2swd.css">
+<style type="text/css">
+    .global-container,
+    body {
+        background-color: #f1f2f2;
+    }
+
+    .formaDJRdisplayRegular,
+    .share-wrapper p,
+    .share-wrapper li,
+    .fonts-loaded .formaDJRdisplayRegular,
+    .fonts-loaded .share-wrapper p,
+    .fonts-loaded .share-wrapper li {
+        font-family: forma-djr-display, sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        letter-spacing: .0125em;
+    }
+
+    .formaDJRdisplayRegularItalic,
+    .fonts-loaded .formaDJRdisplayRegularItalic {
+        font-family: forma-djr-display, sans-serif;
+        font-weight: 500;
+        font-style: italic;
+        letter-spacing: .0125em;
+    }
+
+    .formaDJRdisplayBold,
+    .share-wrapper h2,
+    .fonts-loaded .formaDJRdisplayBold,
+    .fonts-loaded .share-wrapper h2 {
+        font-family: forma-djr-display, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        margin-bottom: 0.75em;
+        letter-spacing: .0125em;
+    }
+
+    .formaDJRdisplayBoldItalic,
+    .fonts-loaded .formaDJRdisplayBoldItalic {
+        font-family: forma-djr-display, sans-serif;
+        font-weight: 700;
+        font-style: italic;
+        letter-spacing: .0125em;
+    }
+
+    .formaDJRdisplayExtraBold,
+    .share-wrapper h3,
+    .fonts-loaded .formaDJRdisplayExtraBold,
+    .fonts-loaded .share-wrapper h3 {
+        font-family: forma-djr-display, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        margin-bottom: 0.75em;
+        letter-spacing: .0125em;
+    }
+
+    .formaDJRdisplayExtraBoldItalic,
+    .fonts-loaded .formaDJRdisplayExtraBoldItalic {
+        font-family: forma-djr-display, sans-serif;
+        font-weight: 700;
+        font-style: italic;
+        letter-spacing: .0125em;
+    }
+
+    .u-tone-background-white {
+        background-color: #f1f2f2;
+    }
+
+    .hero-panel__suffix {
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #fff;
+        line-height: 1.25;
+    }
+
+    #hero-image2 {
+        margin-top: -50px;
+    }
+
+    .page-layout {
+        padding-top: 1em;
+        padding-bottom: 0;
+    }
+
+    .u-ratio {
+        overflow: hidden;
+    }
+
+    @media (min-width: 30em) {
+        .padding-top-more {
+            padding-top: 3em;
+        }
+    }
+
+    @media (min-width: 50em) {
+        .padding-top-more {
+            padding-top: 4em;
+        }
+    }
+
+    .o-figure {
+        margin-bottom: 0;
+    }
+
+    @media (min-width: 30em) {
+
+        .o-grid--2up .o-grid__item,
+        .o-grid--4up .o-grid__item {
+            margin-left: 10px;
+            padding-left: 10px;
+            margin-bottom: 20px;
+            width: calc(50% - 20px);
+            margin: 0 0 0 20px;
+            padding-left: 0;
+        }
+    }
+
+    @media (min-width: 50em) {
+
+        .o-grid--2up .o-grid__item,
+        .o-grid--4up .o-grid__item {
+            margin-bottom: 0;
+        }
+    }
+
+    :root {
+        --red1dk: #811b1e;
+        --red2: #d12329;
+        --red3lt: #e66775;
+        --red4lt: #ec8c80;
+        --blue1: #055ca0;
+        --blue2: #5b84c1;
+        --blue3: #81b7e0;
+        --slategreydark: #1d2743;
+        --grey: #f1f2f2;
+        --grey2: #d1d2d2;
+    }
+
+    .share-wrapper {
+        background-color: var(--grey);
+        position: relative;
+        overflow: hidden;
+        margin-bottom: -1.5em;
+    }
+
+    .share-wrapper h2,
+    .fonts-loaded .share-wrapper h2 {
+        text-transform: uppercase;
+        font-size: 1.25rem;
+        margin-bottom: 0.75em;
+    }
+
+    @media (min-width: 50em) {
+        .share-wrapper h2 {
+            font-size: 1.5rem;
+        }
+    }
+
+    .share-wrapper h3,
+    .fonts-loaded .share-wrapper h3 {
+        font-size: 1.25rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-bottom: 0.75em;
+    }
+
+    @media (min-width: 50em) {
+
+        .share-wrapper h3,
+        .fonts-loaded .share-wrapper h3 {
+            font-size: 1.5rem;
+        }
+    }
+
+    .share-wrapper p,
+    .share-wrapper li {
+        font-size: 1rem;
+    }
+
+    /* @media (min-width: 50em) {
+
+        .share-wrapper p,
+        .share-wrapper li {
+            font-size: 1.25rem;
+        }
+    } */
+
+    .share-wrapper h3.page-intro-1 {
+        text-transform: uppercase;
+        line-height: 1.25;
+        margin-top: 1em;
+    }
+
+    #share-info {
+        /* border: 3px solid var(--blue2); */
+        background: var(--grey2);
+        padding: 16px 20px;
+    }
+
+    @media (min-width: 40em) {
+        #share-info {
+            margin-left: 10px;
+            display: inline-block;
+        }
+    }
+
+    @media (min-width: 50em) {
+        #share-info {
+            margin-left: 20px;
+        }
+    }
+
+    @media (min-width: 70em) {
+        #share-info {
+            margin-left: 40px;
+        }
+    }
+
+    /* @media (min-width: 30em) {
+  .share-wrapper p.page-intro-2 {
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 50em) {
+  .share-wrapper p.page-intro-2 {
+    margin-left: 40px;
+  }
+}
+
+@media (min-width: 70em) {
+  .share-wrapper p.page-intro-2 {
+    margin-left: 60px;
+  }
+} */
+
+    .share-wrapper #share-info .btn {
+        background-color: var(--blue3);
+        color: var(--slategreydark);
+    }
+
+    .share-wrapper #share-info .btn:hover {
+        background-color: var(--blue2)
+    }
+
+    #share-top {
+        position: relative;
+        overflow: hidden;
+    }
+
+    ul#share-nav {
+        padding: 0;
+        position: relative;
+        z-index: 3;
+    }
+
+    ul#share-nav li {
+        display: inline-block;
+        margin-left: 1em;
+    }
+
+    @media (min-width: 50em) {
+        ul#share-nav li {
+            font-size: 125%;
+            margin-left: 2em;
+        }
+    }
+
+    #share-hero {
+        color: var(--blue1);
+    }
+
+    #share-hero .o-grid {
+        align-items: center;
+    }
+
+    @media (min-width: 30em) {
+        #share-hero .o-grid--2up .o-grid__item:nth-of-type(odd) {
+            width: calc(25% - 20px);
+        }
+        #share-hero .o-grid--2up .o-grid__item:nth-of-type(even) {
+            width: calc(75% - 20px);
+        }
+    }
+        
+
+    #share-hero img.share-logo {
+        width: 40vw;
+        position: relative;
+        z-index: 3;
+    }
+
+    @media (min-width: 30em) {
+        #share-hero img.share-logo {
+            width: 36vw;
+        }
+    }
+
+    @media (min-width: 50em) {
+        #share-hero img.share-logo {
+            width: 25vw;
+        }
+    }
+
+    @media (min-width: 70em) {
+        #share-hero img.share-logo {
+            width: 20vw;
+            left: -4em;
+        }
+    }
+
+    #share-hero h2.share-date {
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+
+    @media (min-width: 30em) {
+        #share-hero h2.share-date {
+            font-size: 2rem;
+            margin-left: -40px;
+        }
+    }
+
+    @media (min-width: 50em) {
+        #share-hero h2.share-date {
+            font-size: 2.5rem;
+            margin-left: -50px;
+        }
+    }
+
+    @media (min-width: 70em) {
+        #share-hero h2.share-date {
+            font-size: 3rem;
+            margin-left: -50px;
+        }
+    }
+
+    /* #share-main {
+  background-color: var(--grey);
+  color: var(--red1dk);
+  background-image: url(/92StreetY/media/img/Institutional/Share-Our-America/SareOurAmerica_shape-01.png);
+} */
+
+    #share-about {
+        color: var(--blue1);
+    }
+
+    @media (min-width: 30em) {
+        #share-about {
+            margin-top: -50px;
+        }
+    }
+
+    @media (min-width: 50em) {
+        #share-about {
+            margin-top: -80px;
+        }
+    }
+    
+    #share-about .o-grid__item {
+        position: relative;
+    }
+
+    /* #share-about .o-grid__item:first-child {
+  z-index: 1;
+}
+
+#share-about .o-grid__item:nth-child(2) {
+  z-index: 2;
+} */
+
+    #share-main {
+        color: var(--slategreydark);
+    }
+
+    @media (min-width: 480px) {
+        #share-main {
+            overflow: hidden;
+        }
+    }
+
+    #share-main .u-constrained {
+        position: relative;
+    }
+
+    #share-inclusions {
+        color: var(--blue1);
+        /* overflow: hidden; */
+    }
+
+    #share-inclusions .o-grid__item:first-child {
+        position: relative;
+    }
+
+    #share-inclusions .o-grid__item:nth-child(2) {
+        position: relative;
+        z-index: 2;
+    }
+
+    @media (min-width: 30em) {
+        #share-inclusions .o-grid__item:nth-child(2) {
+            margin-left: -40px;
+        }
+    }
+
+    @media (min-width: 50em) {
+        #share-inclusions .o-grid__item:nth-child(2) {
+            margin-left: -50px;
+        }
+    }
+
+    #share-inclusions2 {
+        color: var(--blue1);
+    }
+
+    #share-inclusions2 .u-constrained {
+        background-color: var(--red4lt);
+        padding: 1em;
+    }
+
+    @media (min-width: 50em) {
+        #share-inclusions2 .u-constrained {
+            padding: 2em;
+        }
+    }
+
+    #share-inclusions2 li {
+        margin-bottom: .5em;
+    }
+
+    #share-form {
+        overflow: hidden;
+    }
+
+    #share-form .u-constrained {
+        position: relative;
+        margin-bottom: 2em;
+    }
+
+    #share-form p {
+        color: var(--blue1);
+    }
+
+    .share-wrapper #share-form .FormPanel {
+        color: var(--slategreydark);
+    }
+
+    .share-wrapper #share-form .FormPanel p {
+        font-size: 1rem;
+    }
+
+    .share-wrapper #share-form .FormPanel .FormButton {
+        background-color: var(--blue1);
+    }
+
+    .share-wrapper #share-form .FormPanel .FormButton.btn:hover {
+        color: var(--red4lt);
+    }
+
+    .share-wrapper #share-form .btn {
+        background-color: var(--blue3);
+        color: var(--slategreydark);
+        width: 100%;
+    }
+
+    .share-wrapper #share-form .btn:hover {
+        background-color: var(--blue2)
+    }
+
+    #share-cta {
+        background-color: var(--slategreydark);
+        color: #fff;
+        overflow: hidden;
+    }
+
+    #share-cta .u-constrained {
+        position: relative;
+        margin-bottom: 2em;
+    }
+
+    #share-cta p {
+        font-size: 1rem;
+    }
+
+    .btn-outline {
+        padding: .5em 1em;
+        border: 1px solid;
+        display: inline-block;
+    }
+
+    .btn-outline:hover {
+        color: var(--red4lt);
+    }
+
+
+    /* .blue3-shape1 {
+  background-color: var(--blue3);
+  -webkit-mask: url(/92StreetY/media/img/Institutional/Share-Our-America/shareAm-shape1.svg) no-repeat 50% 50%;
+  mask: url(/92StreetY/media/img/Institutional/Share-Our-America/shareAm-shape1.svg) no-repeat 50% 50%;
+  position: absolute;
+  z-index: 1;
+}
+ */
+
+    .shape-bg3 {
+        position: absolute;
+        height: 80%;
+        top: -20%;
+        right: 4%;
+        opacity: 0.6;
+    }
+
+    @media (max-width: 479.99px) {
+        .shape-bg3 {
+            /* top: 12%; */
+            right: -90%;
+        }
+    }
+
+    @media (min-width: 480px) and (max-width: 1150px) {
+        .shape-bg3 {
+            top: -36%;
+            right: -10%;
+        }
+    }
+
+    .shape-bg3 polygon {
+        fill: var(--red3lt);
+    }
+
+    .shape-bg1 {
+        position: absolute;
+        height: 100%;
+        top: -16%;
+        left: -35%;
+        opacity: 0.5;
+    }
+
+    @media (min-width: 480px) {
+        .shape-bg1 {
+            left: -25%;
+        }
+    }
+
+    .shape-bg1 polygon {
+        fill: var(--blue2);
+    }
+
+    .shape-bg5 {
+        position: absolute;
+        height: 100%;
+        bottom: -16%;
+        right: -35%;
+        opacity: 0.6;
+    }
+
+    .shape-bg5 polygon {
+        fill: var(--blue3);
+    }
+
+    @media (max-width: 1100px) {
+        .shape-bg5 {
+            display: none;
+        }
+    }
+
+    .shape-bg2 {
+        position: absolute;
+        height: 125%;
+        bottom: -26%;
+        right: -15%;
+        z-index: 1;
+        opacity: 0.6;
+    }
+
+    .shape-bg2 polygon {
+        fill: var(--red4lt);
+    }
+
+    .shape-bg6 {
+        position: absolute;
+        height: 20%;
+        bottom: -10%;
+        right: 10%;
+        mix-blend-mode: multiply;
+        opacity: 0.6;
+    }
+
+    @media (max-width: 799.99px) {
+        .shape-bg6 {
+            display: none;
+        }
+    }
+
+    .shape-bg6 polygon {
+        fill: var(--red3lt);
+    }
+
+    .text-blend-wrapper {
+        position: relative;
+        z-index: 2;
+        mix-blend-mode: multiply;
+    }
+</style>
