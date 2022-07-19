@@ -88,11 +88,15 @@
 
     @media (min-width: 50em) {
         #hero-image2 {
-            width: 100%;
+            width: auto;
+            margin-right: -20px;
         }
     }
     
     @media (min-width: 70em) {
+        #hero-image2 {
+            margin-right: -50px;
+        }
         #body-image1 {
             margin-left: -50px;
         }
@@ -238,14 +242,6 @@
         }
     }
 
-    /* @media (min-width: 50em) {
-
-        .share-wrapper p,
-        .share-wrapper li {
-            font-size: 1.25rem;
-        }
-    } */
-
     .share-wrapper h3.page-intro-1 {
         text-transform: uppercase;
         line-height: 1.25;
@@ -253,7 +249,6 @@
     }
 
     #share-info {
-        /* border: 3px solid var(--blue2); */
         background: var(--grey2);
         padding: 16px 20px;
     }
@@ -276,24 +271,6 @@
             margin-left: 40px;
         }
     }
-
-    /* @media (min-width: 30em) {
-  .share-wrapper p.page-intro-2 {
-    margin-left: 20px;
-  }
-}
-
-@media (min-width: 50em) {
-  .share-wrapper p.page-intro-2 {
-    margin-left: 40px;
-  }
-}
-
-@media (min-width: 70em) {
-  .share-wrapper p.page-intro-2 {
-    margin-left: 60px;
-  }
-} */
 
     .share-wrapper #share-info .btn {
         background-color: var(--blue3);
@@ -362,6 +339,7 @@
 
     #share-hero {
         color: var(--blue1);
+        position: relative;
     }
 
     #share-hero .o-grid {
@@ -445,12 +423,6 @@
         }
     }
 
-    /* #share-main {
-  background-color: var(--grey);
-  color: var(--red1dk);
-  background-image: url(/92StreetY/media/img/Institutional/Share-Our-America/SareOurAmerica_shape-01.png);
-} */
-
     @media (min-width: 30em) {
         #share-about {
             margin-top: -50px;
@@ -467,14 +439,6 @@
         position: relative;
     }
 
-    /* #share-about .o-grid__item:first-child {
-  z-index: 1;
-}
-
-#share-about .o-grid__item:nth-child(2) {
-  z-index: 2;
-} */
-
     #share-intro {
         position: relative;
     }
@@ -483,19 +447,12 @@
         color: var(--slategreydark);
     }
 
-    /* @media (min-width: 480px) {
-        #share-main {
-            overflow: hidden;
-        }
-    } */
-
     #share-main .u-constrained {
         position: relative;
     }
 
     #share-inclusions {
         color: var(--blue1);
-        /* overflow: hidden; */
     }
 
     #share-inclusions .o-grid__item:first-child {
@@ -616,9 +573,9 @@
 
     .shape-bg3 {
         position: absolute;
-        height: 94%;
+        height: 130%;
         bottom: -1em;
-        left: -8%;
+        left: -10%;
         opacity: 0.4;
         z-index: -1;
     }
@@ -653,7 +610,7 @@
 
     .shape-bg5 {
         position: absolute;
-        height: 100%;
+        height: 90%;
         top: 0%;
         right: -35%;
         opacity: 0.5;
@@ -666,19 +623,19 @@
 
     .shape-bg2 {
         position: absolute;
-        height: 35%;
-        top: 2%;
-        right: -18%;
+        height: 150%;
+        right: -28%;
+        top: -5%;
         z-index: 0;
         opacity: 0.5;
     }
 
-    @media (min-width: 50em) {
+    /* @media (min-width: 50em) {
         .shape-bg2 {
-            height: 65%;
+            height: 50%;
             right: 5%;
         }
-    }
+    } */
 
     .shape-bg2 polygon {
         fill: var(--red4lt);
