@@ -1,9 +1,9 @@
 <link rel="stylesheet" href="https://use.typekit.net/mjn2swd.css">
 <style type="text/css">
-    .global-container,
+    /* .global-container,
     body {
         background-color: #f1f2f2;
-    }
+    } */
 
     .formaDJRdisplayRegular,
     .share-wrapper p,
@@ -63,9 +63,9 @@
         letter-spacing: .0125em;
     }
 
-    .u-tone-background-white {
+    /* .u-tone-background-white {
         background-color: #f1f2f2;
-    }
+    } */
 
     .hero-panel__suffix {
         font-weight: bold;
@@ -177,10 +177,11 @@
     }
 
     .share-wrapper {
-        background-color: var(--grey);
+        /* background-color: var(--grey); */
         position: relative;
         overflow: hidden;
         margin-bottom: -1.5em;
+        color: var(--slategreydark);
     }
 
     .share-wrapper h2,
@@ -349,7 +350,6 @@
     @media (min-width: 30em) {
         #share-hero .o-grid--2up .o-grid__item:nth-of-type(odd) {
             width: calc(35% - 20px);
-            margin-left: 0;
         }
         #share-hero .o-grid--2up .o-grid__item:nth-of-type(even) {
             width: calc(65% - 20px);
@@ -357,15 +357,25 @@
     }
 
     @media (min-width: 50em) {
-        .o-2col__primary {
+        #share-intro .o-2col__primary {
             float: left;
             width: 57%;
             margin-left: 0;
             margin-right: 3%;
         }
-        .o-2col__secondary {
+        #share-intro .o-2col__secondary {
             float: right;
             width: 40%;
+        }
+    }
+
+
+    @media (min-width: 50em) {
+        .body-2col .o-2col__primary {
+            width: 72%;
+        }
+        .body-2col .o-2col__secondary {
+            width: 25%;
         }
     }
     
@@ -390,7 +400,7 @@
         }
     }
 
-    @media (min-width: 70em) {
+    @media (min-width: 80em) {
         #share-hero img.share-logo {
             width: 20vw;
             left: -4em;
@@ -612,7 +622,7 @@
         position: absolute;
         height: 90%;
         top: 0%;
-        right: -35%;
+        right: -20%;
         opacity: 0.5;
         z-index: -1;
     }
