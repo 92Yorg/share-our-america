@@ -10,6 +10,41 @@
     #impact-intro p {
         font-size: 125%;
     }
+
+    @media (max-width: 29.99em) {
+        .impact-list .o-grid__item:nth-child(2) {
+            margin-top: 1em;
+        }
+    }
+
+    .impact-list ul {
+        list-style: none;
+        padding: 0;
+        position: relative;
+        z-index: 2;
+    }
+    .impact-list ul li {
+        margin-bottom: 1em;
+    }
+    .impact-list h2 {
+        margin: 0;
+        color: var(--grey);
+        position: relative;
+        font-size: 5em;
+        margin-top: -.75em;
+        font-weight: 700;
+    }
+    @media (min-width: 50em) {
+        .impact-list h2 {
+            font-size: 6em;
+        }
+    }
+    @media (min-width: 65em) {
+        .impact-list h2 {
+            font-size: 9em;
+            margin-top: -0.5em;
+        }
+    }
     .shape-bg6 {
         position: absolute;
         height: 180%;

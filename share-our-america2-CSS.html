@@ -1,4 +1,4 @@
-<link href="https://use.typekit.net/mjn2swd.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://use.typekit.net/dcy4cnp.css">
 <style type="text/css">
     /* .global-container,
     body {
@@ -49,11 +49,12 @@
     }
 
     .formaDJRdisplayExtraBold,
+    .share-wrapper h1,
     .share-wrapper h3,
     .fonts-loaded .formaDJRdisplayExtraBold,
+    .fonts-loaded .share-wrapper h1,
     .fonts-loaded .share-wrapper h3 {
         font-family: forma-djr-display, sans-serif;
-        font-weight: 700;
         font-style: normal;
         margin-bottom: 0.75em;
         letter-spacing: .0125em;
@@ -84,7 +85,7 @@
     }
 
     #hero-image2 {
-        margin-top: -50px;
+        margin-top: -80px;
         position: relative;
         z-index: 3;
         width: 60%;
@@ -105,6 +106,10 @@
 
         #body-image1 {
             margin-left: -50px;
+        }
+
+        #body-image2 {
+            margin-right: -50px;
         }
     }
 
@@ -182,10 +187,6 @@
         --grey2: #d1d2d2;
     }
 
-    #share-header {
-        background-color: #f1f2f2;
-    }
-
     .share-wrapper {
         /* background-color: var(--grey); */
         position: relative;
@@ -217,21 +218,17 @@
         color: var(--red2);
     }
 
-    .share-wrapper h1 .fonts-loaded .share-wrapper h1 {
-        font-weight: 800;
-        text-transform: uppercase;
-    }
-
-
     @media (min-width: 50em) {
         .share-wrapper h2 {
             font-size: 2.5rem;
         }
     }
 
+    .share-wrapper h1,
+    .fonts-loaded .share-wrapper h1,
     .share-wrapper h3,
     .fonts-loaded .share-wrapper h3 {
-        font-size: 1.25rem;
+        font-size: 1.375rem;
         font-weight: 800;
         text-transform: uppercase;
         margin-bottom: 0.75em;
@@ -239,9 +236,21 @@
 
     @media (min-width: 50em) {
 
+        .share-wrapper h1,
+        .fonts-loaded .share-wrapper h1,
+        .share-wrapper h3,
+        .fonts-loaded .share-wrapper h3  {
+            font-size: 1.5rem;
+        }
+    }
+
+    @media (min-width: 70em) {
+
+        .share-wrapper h1,
+        .fonts-loaded .share-wrapper h1,
         .share-wrapper h3,
         .fonts-loaded .share-wrapper h3 {
-            font-size: 1.5rem;
+            font-size: 2rem;
         }
     }
 
@@ -250,12 +259,12 @@
         font-size: 1rem;
     }
 
-    .share-wrapper p.page-intro2 {
+    .share-wrapper p.page-intro-2 {
         font-size: 1.375rem;
     }
 
     @media (min-width: 50em) {
-        .share-wrapper p.page-intro2 {
+        .share-wrapper p.page-intro-2 {
             font-size: 1.625rem;
         }
     }
@@ -263,7 +272,6 @@
     .share-wrapper h3.page-intro-1 {
         text-transform: uppercase;
         line-height: 1.25;
-        margin-top: 1em;
     }
 
     #share-info {
@@ -330,21 +338,24 @@
     }
 
     .u-link:hover,
-    ul.share-nav li a:hover {
+    ul.share-nav li a:hover,
+    a.share-nav-highlight:hover {
         color: var(--blue2);
     }
 
-    .share-nav-highlight a {
+    .share-nav-highlight a,
+    a.share-nav-highlight  {
         font-weight: bold;
         position: relative;
     }
 
-    .share-nav-highlight a::after {
+    .share-nav-highlight a::after,
+    a.share-nav-highlight::after {
         content: '\00A0';
         display: block;
         background: var(--red4lt);
         width: 108%;
-        line-height: 8px;
+        line-height: .5;
         opacity: .5;
         position: absolute;
         bottom: 0;
@@ -361,6 +372,7 @@
     #share-header,
     #share-hero {
         color: var(--blue1);
+        background-color: var(--grey);
         position: relative;
     }
 
@@ -424,23 +436,26 @@
         width: 40vw;
         position: relative;
         z-index: 3;
+        max-width: 250px;
     }
 
     @media (min-width: 30em) {
         #share-hero img.share-logo {
             width: 36vw;
+            margin-bottom: -50px;
         }
     }
 
     @media (min-width: 50em) {
         #share-hero img.share-logo {
             width: 25vw;
+            margin-bottom: -80px;
         }
     }
 
     @media (min-width: 80em) {
         #share-hero img.share-logo {
-            width: 20vw;
+            width: 250px;
             left: -4em;
         }
     }
@@ -471,18 +486,6 @@
         }
     }
 
-    @media (min-width: 30em) {
-        #share-about {
-            margin-top: -50px;
-        }
-    }
-
-    @media (min-width: 50em) {
-        #share-about {
-            margin-top: -80px;
-        }
-    }
-
     #share-about .o-grid__item {
         position: relative;
     }
@@ -491,12 +494,22 @@
         position: relative;
     }
 
+    @media (min-width: 70em) {
+        #share-intro h3.page-intro-1 {
+            margin-top: 1em;
+        }
+    }
+
     #share-main {
         color: var(--slategreydark);
     }
 
     #share-main .u-constrained {
         position: relative;
+    }
+
+    #share-main .o-grid {
+        align-items: center;
     }
 
     #share-inclusions {
@@ -621,7 +634,7 @@
 
     .shape-bg3 {
         position: absolute;
-        height: 130%;
+        height: 120%;
         bottom: -1em;
         left: -10%;
         opacity: 0.4;
@@ -640,15 +653,21 @@
 
     .shape-bg1 {
         position: absolute;
-        height: 170%;
+        height: 200%;
         top: -25%;
         left: -50%;
         opacity: 0.3;
     }
 
-    @media (min-width: 30em) {
+    @media (max-width: 49.99em) {
         .shape-bg1 {
-            left: -30%;
+            display: none;
+        }
+    }
+
+    @media (min-width: 50em) {
+        .shape-bg1 {
+            left: -20%;
         }
     }
 
@@ -658,9 +677,9 @@
 
     .shape-bg5 {
         position: absolute;
-        height: 90%;
-        top: 0%;
-        right: -20%;
+        height: 110%;
+        bottom: 0%;
+        right: -10%;
         opacity: 0.5;
         z-index: -1;
     }
@@ -671,9 +690,9 @@
 
     .shape-bg2 {
         position: absolute;
-        height: 150%;
-        right: -28%;
-        top: -5%;
+        height: 300%;
+        right: -22%;
+        top: 15%;
         z-index: 0;
         opacity: 0.5;
     }
@@ -715,17 +734,21 @@
     }
 
     .quote-slider .swiper-slide .pull-quote {
-        background-color: var(--red3lt);
+        background-color: var(--slategreydark);
         color: #fff;
     }
 
-    .quote-slider .swiper-slide:nth-child(odd) .pull-quote {
+    /* .quote-slider .swiper-slide:nth-child(odd) .pull-quote {
         background-color: var(--red2);
-    }
+    } */
 
     .pull-quote__opening {
         font-size: 9.25rem;
         top: 0px;
         font-family: forma-djr-display, sans-serif;
     }
+    .quote-slider cite {
+        font-style: italic;
+    }
+
 </style>
