@@ -1,17 +1,9 @@
 <style type="text/css">
-    /* @media (min-width: 30em) {
-        #form-anchors {
-            display: none;
-        }
-        #form-anchors .btn  {
-            display: block;
-        }
-    } */
-    #share-cta {
+    .footer-button h4 {
         display: none;
     }
 </style>
-<section class="page-layout share-wrapper u-padded-bottom">
+<section class="page-layout share-wrapper u-padded-bottom" style="min-height: calc(100vh - 289px);">
 	<div class="u-constrained u-constrained--skinny page-layout">
 		<h1>Get Involved</h1>
 		<object codetype="CMSInlineControl" style="display: none" type="Widget">

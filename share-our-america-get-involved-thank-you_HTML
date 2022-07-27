@@ -1,0 +1,10 @@
+<style type="text/css">
+    .footer-button h4 {
+        display: none;
+    }
+</style>
+<section class="page-layout share-wrapper u-padded-bottom" style="min-height: calc(100vh - 289px);">
+	<div class="u-constrained u-constrained--skinny page-layout">
+		<p>Thank you for your submission.</p>
+	</div>
+</section>
