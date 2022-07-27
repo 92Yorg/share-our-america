@@ -3,6 +3,7 @@
     .global-container,
     body {
         background-color: #fff;
+        min-height: 100vh;
     }
 
     .formaDJRdisplayRegular,
@@ -771,6 +772,22 @@
     .quote-slider .swiper-slide .pull-quote {
         background-color: var(--slategreydark);
         color: #fff;
+    }
+    
+    @media (min-width: 62.5em) {
+        .quote-slider__inner {
+            padding-bottom: 25px;
+        }
+    }
+
+    .quote-slider .swiper-pagination {
+        bottom: 0;
+    }
+
+    .swiper-pagination-bullet {
+        width: 15px;
+        height: 15px;
+        opacity: unset;
     }
 
     /* .quote-slider .swiper-slide:nth-child(odd) .pull-quote {
