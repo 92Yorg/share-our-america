@@ -1,4 +1,4 @@
-<style type="text/css">
+<!-- <style type="text/css">
     @media (min-width: 30em) {
         #form-anchors {
             display: none;
@@ -7,12 +7,20 @@
             display: block;
         }
     }
-</style>
+</style> -->
 <section class="page-layout share-wrapper u-padded-bottom">
-    <div class="u-constrained u-constrained--narrow page-layout">
-        <h1>Get Involved</h1>
-
-        <ul id="form-anchors" class="o-grid o-grid--2up u-padded-vertical">
+	<div class="u-constrained u-constrained--skinny page-layout">
+		<h1>Get Involved</h1>
+		<object codetype="CMSInlineControl" style="display: none" type="Widget">
+			<param name="name" value="BizForm" />
+			<param name="Visible" value="True" />
+			<param name="HideOnSubPages" value="False" />
+			<param name="BizFormName" value="ShareOurAmericaJoinTheCommunity" />
+			<param name="UseColonBehindLabel" value="True" />
+			<param name="UseUpdatePanel" value="False" />
+			<param name="widget_displayname" value="On-line+form" />
+			<param name="cms_type" value="widget" /></object
+		><!-- <ul id="form-anchors" class="o-grid o-grid--2up u-padded-vertical">
             <li class="o-grid__item">
                 <p>
                     <a class="btn btn--large" href="#participate">Participate</a>
@@ -54,6 +62,6 @@
                     <param name="height" value="" />
                 </object>
             </li>
-        </ul>
-    </div>
+        </ul> -->
+	</div>
 </section>
