@@ -1,13 +1,16 @@
-<!-- <style type="text/css">
-    @media (min-width: 30em) {
+<style type="text/css">
+    /* @media (min-width: 30em) {
         #form-anchors {
             display: none;
         }
         #form-anchors .btn  {
             display: block;
         }
+    } */
+    #share-cta {
+        display: none;
     }
-</style> -->
+</style>
 <section class="page-layout share-wrapper u-padded-bottom">
 	<div class="u-constrained u-constrained--skinny page-layout">
 		<h1>Get Involved</h1>
