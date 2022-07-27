@@ -606,7 +606,7 @@
         background-color: var(--blue2)
     }
 
-    #share-cta {
+    #share-footer {
         background-color: var(--slategreydark);
         color: #fff;
         position: relative;
@@ -614,15 +614,26 @@
         overflow: hidden;
     }
 
-    #share-cta .u-constrained {
+    #share-footer .u-constrained {
         position: relative;
         margin-top: 1em;
         margin-bottom: 1em;
     }
 
-    #share-cta p {
+    #share-footer p {
         font-size: 1rem;
     }
+
+    #share-footer ul {
+        align-items: center;
+    }
+
+    @media (min-width: 30em) {
+        .footer-button {
+            text-align: right;
+        }
+    }
+    
 
     .btn-outline {
         padding: .5em 1em;
@@ -763,13 +774,11 @@
         font-style: italic;
     }
     .belfer-logo-area {
-        border-top: 1px solid #000;
-        padding-top: .25em;
-        margin-top: 1em;
-    }
-    .belfer-logo-area img {
         width: 100%;
         max-width: 320px;
+        color: #fff;
     }
-
+    .belfer-logo-area g {
+        fill: #fff;
+    }
 </style>
