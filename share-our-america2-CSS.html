@@ -622,6 +622,7 @@
 
     #share-footer p {
         font-size: 1rem;
+        margin-bottom: .25em;
     }
 
     #share-footer ul {
@@ -629,11 +630,22 @@
     }
 
     @media (min-width: 30em) {
-        .footer-button {
+        .footer-logo {
             text-align: right;
         }
     }
-    
+
+    .footer-logo-inner {
+        width: 100%;
+        max-width: 320px;
+        color: #fff;
+        display: inline-block;
+        text-align: left;
+    }
+
+    .footer-logo g {
+        fill: #fff;
+    }    
 
     .btn-outline {
         padding: .5em 1em;
@@ -773,12 +785,5 @@
     .quote-slider cite {
         font-style: italic;
     }
-    .belfer-logo-area {
-        width: 100%;
-        max-width: 320px;
-        color: #fff;
-    }
-    .belfer-logo-area g {
-        fill: #fff;
-    }
+    
 </style>
