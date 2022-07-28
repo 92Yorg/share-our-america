@@ -3,7 +3,7 @@
         display: none;
     }
 </style>
-<section class="page-layout share-wrapper u-padded-bottom" style="min-height: calc(100vh - 289px);">
+<section class="page-layout share-wrapper u-padded-bottom" style="min-height: calc(100vh - 269px);">
 	<div class="u-constrained u-constrained--skinny page-layout">
 		<h1>Get Involved</h1>
 		<object codetype="CMSInlineControl" style="display: none" type="Widget">
