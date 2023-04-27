@@ -637,6 +637,40 @@
         background: none;
     }
 
+    .case-study-item {
+        margin-bottom: 1em;
+    }
+
+    @media (max-width: 49.99em) {
+        .case-study-item {
+            display: block;
+        }
+        .case-study-item .subscription-item.has-image .subscription-item__media {
+            width: auto;
+        }
+    }
+
+    @media (max-width: 29.99em) {
+        .case-study-item.subscription-item.has-image .subscription-item__media {
+            width: auto;
+        }
+    }
+
+    @media (min-width: 30em) and (max-width: 49.99em) {
+        .case-study-item.subscription-item.has-image .subscription-item__media {
+            width: auto;
+            padding: 1.25%;
+        }
+    }
+
+    .case-study-item .subscription-item__title {
+        text-transform: none;
+    }
+
+    .subscription-item__description {
+        display: block;
+    }
+
     #share-footer {
         background-color: var(--slategreydark);
         color: #fff;
