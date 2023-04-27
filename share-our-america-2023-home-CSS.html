@@ -69,9 +69,20 @@
         letter-spacing: .05em;
     }
 
-    /* .u-tone-background-white {
-        background-color: #f1f2f2;
-    } */
+    .bg-red-shape {
+        background-image: url(/92StreetY/media/img/Innovation/share-our-america-red-shape.svg);
+        background-position: center left;
+        background-size: 180%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    @media (min-width: 50em) {
+        .bg-red-shape {
+            background-size: cover;
+            background-position: top center;
+        }
+    }
 
     .hero-panel__suffix {
         font-weight: bold;
@@ -766,7 +777,7 @@
     .text-blend-wrapper {
         position: relative;
         z-index: 2;
-        mix-blend-mode: multiply;
+        /* mix-blend-mode: multiply; */
     }
 
     .quote-slider .swiper-slide .pull-quote {
