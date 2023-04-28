@@ -637,34 +637,73 @@
         background: none;
     }
 
-    .case-study-item {
+    .share-wrapper .case-study-item {
         margin-bottom: 1em;
     }
 
     @media (max-width: 49.99em) {
-        .case-study-item {
+        .share-wrapper .case-study-item {
             display: block;
         }
-        .case-study-item .subscription-item.has-image .subscription-item__media {
+        .share-wrapper .case-study-item .subscription-item.has-image .subscription-item__media {
             width: auto;
         }
     }
 
     @media (max-width: 29.99em) {
-        .case-study-item.subscription-item.has-image .subscription-item__media {
+        .share-wrapper .case-study-item.subscription-item.has-image .subscription-item__media {
             width: auto;
         }
     }
 
     @media (min-width: 30em) and (max-width: 49.99em) {
-        .case-study-item.subscription-item.has-image .subscription-item__media {
+        .share-wrapper .case-study-item.subscription-item.has-image .subscription-item__media {
             width: auto;
             padding: 1.25%;
         }
     }
 
-    .case-study-item .subscription-item__title {
+    .share-wrapper .case-study-item .subscription-item__title {
         text-transform: none;
+    }
+
+    .share-wrapper.case-study h1 {
+        text-transform: none;
+    }
+
+    .share-wrapper .image-slider__item {
+        background: #fff;
+        padding: 1em;
+        border: 2px solid;
+    }
+
+    .share-wrapper .image-slider__text {
+        margin-top: 1em;
+    }
+
+    .share-wrapper .image-slider__text p {
+        font-style: italic;
+    }
+
+    @media (min-width: 30em) {
+        .share-wrapper .image-slider__item {
+            display: flex;
+            align-items: center;
+        }
+        .share-wrapper .image-slider__media {
+            width: 50%;
+            height: fit-content;
+        }
+        .share-wrapper .image-slider__text {
+            margin-top: 0;
+            margin-left: 1em;
+        }
+        .share-wrapper .image-slider__text p {
+            font-size: 120%;
+        }
+        .share-wrapper .image-slider__text cite {
+            text-align: left;
+        }    
     }
 
     .subscription-item__description {
