@@ -382,6 +382,7 @@
     a.share-nav-highlight  {
         font-weight: bold;
         position: relative;
+        z-index: 3;
     }
 
     .share-nav-highlight a::after,
@@ -875,6 +876,16 @@
     .quote-slider .swiper-slide .pull-quote {
         background-color: var(--slategreydark);
         color: #fff;
+    }
+
+    .image-slider__inner {
+        padding-bottom: 35px;
+    }
+
+    @media (min-width: 56.25em) {
+        .swiper-slide {
+            padding-bottom: 0;
+        }
     }
     
     @media (min-width: 62.5em) {
