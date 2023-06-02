@@ -1,0 +1,66 @@
+<style type="text/css">
+    @media (max-width: 50em) {
+        li.flex-child:nth-of-type(1) {
+            -webkit-order: 2;
+            -ms-flex-order: 2;
+            order: 2;
+        }
+
+        li.flex-child:nth-of-type(2) {
+            -webkit-order: 1;
+            -ms-flex-order: 1;
+            order: 1;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-buttons--footer .btn--loading:nth-child(2) {
+        display: none;
+    }
+
+    .form-field--inline .EditingFormControlNestedControl {
+        max-width: 100%;
+    }
+
+    .form-field .checkbox label,
+    .form-field .radio-list-vertical label {
+        display: inline;
+    }
+</style>
+<section class="page-layout page-slice u-tone-background-white" id="share-donate-main">
+    <div class="page-container page-layout u-constrained u-constrained--narrow">
+        <!--<div style="max-width: 240px;margin-bottom: 1em;"><img alt="Share Our America logo" src="/92StreetY/media/img/Institutional/Share-Our-America/share-our-america-logo.svg" /></div>--><object
+            codetype="CMSInlineControl" style="display: none" type="widget">
+            <param name="name" value="pageHeader_widget" />
+            <param name="visible" value="True" />
+            <param name="pagetitle" value="Make+a+gift+to+support+Share+Our+America!" />
+            <param name="containercssclass" value=".u-txt-align-center" />
+            <param name="widget_displayname" value="Page+Header+(Title)" />
+            <param name="width" value="" />
+            <param name="height" value="" />
+        </object>
+        <h2>Help us reduce polarization in America by supporting 92Y&rsquo;s new program, Share Our America. Through
+            your support, you can:</h2>
+        <object codetype="CMSInlineControl" style="display: none" type="widget">
+            <param name="returnurl" value="%2fshareouramerica%2fdonate" />
+            <param name="name" value="Contribution_widget" />
+            <param name="useupdatepanel" value="False" />
+            <param name="csiactivitytypeid" value="278" />
+            <param name="visible" value="True" />
+            <param name="hideonsubpages" value="False" />
+            <param name="usecolonbehindlabel" value="False" />
+            <param name="bizformname" value="ShareOurAmericaDonation" />
+            <param name="widget_displayname" value="Contribution" />
+            <param name="width" value="" />
+            <param name="height" value="" />
+        </object>
+    </div>
+</section>
