@@ -405,6 +405,16 @@
         }
     }
 
+    h4 .share-nav-highlight {
+        font-size: 1.25rem;
+    }
+
+    @media (min-width: 50em) {
+        h4 .share-nav-highlight {
+            font-size: 1.375rem;
+        }
+    }
+
     #share-header,
     #share-hero {
         color: var(--blue1);
@@ -710,7 +720,7 @@
     }
 
     #share-footer {
-        background-color: var(--slategreydark);
+        background-color: #000;
         color: #fff;
         position: relative;
         z-index: 3;
@@ -725,17 +735,11 @@
 
     #share-footer p {
         font-size: 1rem;
-        margin-bottom: .25em;
+        margin-bottom: 1em;
     }
 
     #share-footer ul {
         align-items: center;
-    }
-
-    @media (min-width: 30em) {
-        .footer-logo {
-            text-align: right;
-        }
     }
 
     .footer-logo-inner {
@@ -743,7 +747,6 @@
         max-width: 320px;
         color: #fff;
         display: inline-block;
-        text-align: left;
     }
 
     .footer-logo g {
@@ -886,9 +889,13 @@
         }
     }
     
+    .quote-slider__inner {
+        padding-bottom: 30px;
+    }
+    
     @media (min-width: 62.5em) {
         .quote-slider__inner {
-            padding-bottom: 25px;
+            padding-bottom: 30px;
         }
     }
 
