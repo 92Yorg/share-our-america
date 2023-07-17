@@ -6,67 +6,8 @@
         min-height: 100vh;
     }
 
-    .formaDJRdisplayRegular,
-    .share-wrapper p,
-    .share-wrapper li,
-    .fonts-loaded .formaDJRdisplayRegular,
-    .fonts-loaded .share-wrapper p,
-    .fonts-loaded .share-wrapper li {
-        font-family: forma-djr-display, sans-serif;
-        font-weight: 500;
-        font-style: normal;
-        letter-spacing: .05em;
-    }
-
-    .formaDJRdisplayRegularItalic,
-    .fonts-loaded .formaDJRdisplayRegularItalic {
-        font-family: forma-djr-display, sans-serif;
-        font-weight: 500;
-        font-style: italic;
-        letter-spacing: .05em;
-    }
-
-    .formaDJRdisplayBold,
-    .share-wrapper h2,
-    .fonts-loaded .formaDJRdisplayBold,
-    .fonts-loaded .share-wrapper h2 {
-        font-family: forma-djr-display, sans-serif;
-        font-weight: 700;
-        font-style: normal;
-        margin-bottom: 0.75em;
-        letter-spacing: .05em;
-    }
-
     .share-wrapper h1 {
         text-transform: uppercase;
-    }
-
-    .formaDJRdisplayBoldItalic,
-    .fonts-loaded .formaDJRdisplayBoldItalic {
-        font-family: forma-djr-display, sans-serif;
-        font-weight: 700;
-        font-style: italic;
-        letter-spacing: .05em;
-    }
-
-    .formaDJRdisplayExtraBold,
-    .share-wrapper h1,
-    .share-wrapper h3,
-    .fonts-loaded .formaDJRdisplayExtraBold,
-    .fonts-loaded .share-wrapper h1,
-    .fonts-loaded .share-wrapper h3 {
-        font-family: forma-djr-display, sans-serif;
-        font-style: normal;
-        margin-bottom: 0.75em;
-        letter-spacing: .05em;
-    }
-
-    .formaDJRdisplayExtraBoldItalic,
-    .fonts-loaded .formaDJRdisplayExtraBoldItalic {
-        font-family: forma-djr-display, sans-serif;
-        font-weight: 700;
-        font-style: italic;
-        letter-spacing: .05em;
     }
 
     .bg-red-shape {
@@ -221,14 +162,6 @@
         color: var(--slategreydark);
     }
 
-    .share-wrapper h2,
-    .fonts-loaded .share-wrapper h2 {
-        font-family: forma-djr-display, sans-serif;
-        font-weight: 800;
-        text-transform: uppercase;
-        font-size: 1.5rem;
-    }
-
     .text-blue1 {
         color: var(--blue1);
     }
@@ -356,7 +289,6 @@
         padding: 2px 0;
         margin-left: 1em;
         text-transform: uppercase;
-        font-family: forma-djr-display, sans-serif;
         font-weight: 500;
     }
 
@@ -369,7 +301,6 @@
 
     ul.share-nav li a {
         color: var(--slategreydark);
-        letter-spacing: .1em;
     }
 
     .u-link:hover,
@@ -432,7 +363,7 @@
         margin: 0 auto;
     }
 
-    @media (min-width: 50em) {
+    @media (min-width: 30em) {
         #share-hero .o-grid--2up .o-grid__item:nth-of-type(odd) {
             width: calc(20% - 20px);
         }
@@ -440,6 +371,9 @@
         #share-hero .o-grid--2up .o-grid__item:nth-of-type(even) {
             width: calc(80% - 20px);
         }
+    }
+
+    @media (min-width: 50em) {
         #share-intro .o-2col__primary,
         #share-about-page .o-2col__primary  {
             width: 57%;
@@ -474,15 +408,14 @@
 
     @media (min-width: 30em) {
         #share-hero img.share-logo {
-            width: 36vw;
-            margin-bottom: -50px;
+            width: 20vw;
+            max-width: 220px;
         }
     }
 
     @media (min-width: 50em) {
         #share-hero img.share-logo {
-            width: 25vw;
-            margin-bottom: -80px;
+            width: 15vw;
         }
     }
 
@@ -906,8 +839,8 @@
     .pull-quote__opening {
         font-size: 9.25rem;
         top: 0px;
-        font-family: forma-djr-display, sans-serif;
     }
+
     .quote-slider cite {
         font-style: italic;
     }
