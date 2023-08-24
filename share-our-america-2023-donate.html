@@ -8,33 +8,77 @@
     }
 
     #donate-section {
-        margin-bottom: calc(100vh - 570px);
+        margin-bottom: 3em;
+    }
+
+    .btn-md-custom {
+        padding: 16px 32px;
+    }
+
+    .monthly .checkbox__checkmark {
+        position: absolute;
+        top: 4px !important;
+        left: 4px !important;
+        height: 20px !important;
+        width: 20px !important;
+        background-color: #eee;
+        display: inline-block;
+    }
+    .monthly .checkbox__checkmark:after {
+        position: absolute;
+        height: 14px;
+        width: 14px;
+        background-color: #fff;
+        display: inline-block;
+        content: "";
+        left: 6px !important;
+        top: 2px !important;
+        display: none;
+    }
+    .monthly .checkbox:checked + .label .checkbox__checkmark:after {
+        left: 6px !important;
+        top: 2px !important;
+        width: 8px !important;
+        height: 12px !important;
+        border: solid #112b4c;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    .monthly .checkbox__checkmark:after {
+        content: "";
+        left: 6px !important;
+        top: 2px !important;
+        position: absolute;
+        display: none;
+    }
+    .message--warning {
+        text-align: left;
     }
 </style>
-
 <section class="share-wrapper page-layout bg-red-shape">
     <div class="u-constrained u-constrained--narrow">
-
         <div class="page-layout">
             <h1>Donate</h1>
         </div>
 
         <div class="page-layout">
-            <figure id="hero-image1" class="o-figure" itemscope="" itemtype="http://schema.org/ImageObject">
-                <div>
-                    <img alt="A group of people at a restaurant in Chattanooga" class="o-figure__media"
-                        src="/92StreetY/media/img/Innovation/share-our-america-chardron-overhead.jpg" />
-                </div>
+            <figure class="o-figure" id="hero-image1" itemscope="" itemtype="http://schema.org/ImageObject">
+                <div><img alt="A group of people at a restaurant in Chattanooga" class="o-figure__media"
+                        src="/92StreetY/media/img/Innovation/share-our-america-chardron-overhead.jpg" /></div>
             </figure>
         </div>
 
         <div class="page-layout u-constrained u-constrained--skinny">
             <h2>Your support now will magnify our impact tomorrow.</h2>
 
-            <p>When you give to Share Our America, you&rsquo;re ensuring our work bridging divides and rebuilding trust can scale across America. Your donation will directly support on-the-ground costs for gatherings, events, cohort leadership stipends, and critical organizational and staff support.</p>
+            <p>When you give to Share Our America, you&rsquo;re ensuring our work bridging divides and rebuilding trust
+                can scale across America. Your donation will directly support on-the-ground costs for gatherings,
+                events, cohort leadership stipends, and critical organizational and staff support.</p>
         </div>
 
-        <div id="donate-section" class="page-layout u-constrained u-constrained--skinny u-txt-align-center">
+        <div class="page-layout u-constrained u-constrained--skinny u-txt-align-center" id="donate-section">
             <h3>Support Share Our America</h3>
             <object codetype="CMSInlineControl" style="display: none" type="Widget">
                 <param name="name" value="SimpleDonate_1" />
@@ -44,7 +88,7 @@
                 <param name="DisplaySuccessMsg" value="True" />
                 <param name="HideOnSuccess" value="True" />
                 <param name="donateOptions" value="50%7c100%7c500%7c1000%7c5000" />
-                <param name="DisplayMonthlyOption" value="False" />
+                <param name="DisplayMonthlyOption" value="True" />
                 <param name="addToCartBtnTxt" value="Donate" />
                 <param name="CSIActivityTypeStr" value="278" />
                 <param name="FundDesignationStr" value="2702" />
