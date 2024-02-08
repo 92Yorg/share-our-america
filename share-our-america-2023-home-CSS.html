@@ -164,32 +164,64 @@
     } */
 
     .share-wrapper h1,
-    .fonts-loaded .share-wrapper h1,
-    .share-wrapper h3,
-    .fonts-loaded .share-wrapper h3 {
+    .fonts-loaded .share-wrapper h1 {
+        font-size: 1.5rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    
+    .share-wrapper h2,
+    .fonts-loaded .share-wrapper h2 {
         font-size: 1.375rem;
         font-weight: 800;
         text-transform: uppercase;
-        margin-bottom: 0.75em;
+        margin-bottom: 0.25em;
+    }
+
+    .share-wrapper h3,
+    .fonts-loaded .share-wrapper h3 {
+        font-size: 1.25rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-bottom: 0.25em;
+        text-align: center;
     }
 
     @media (min-width: 50em) {
 
         .share-wrapper h1,
-        .fonts-loaded .share-wrapper h1,
+        .fonts-loaded .share-wrapper h1  {
+            font-size: 1.75rem;
+        }
+
+        .share-wrapper h2,
+        .fonts-loaded .share-wrapper h2  {
+            font-size: 1.5rem;
+        }
+
         .share-wrapper h3,
         .fonts-loaded .share-wrapper h3  {
-            font-size: 1.5rem;
+            font-size: 1.25rem;
         }
     }
 
     @media (min-width: 70em) {
 
         .share-wrapper h1,
-        .fonts-loaded .share-wrapper h1,
+        .fonts-loaded .share-wrapper h1 {
+            font-size: 2.5rem;
+        }
+
+        .share-wrapper h2,
+        .fonts-loaded .share-wrapper h2 {
+            font-size: 2rem;
+        }
+
         .share-wrapper h3,
         .fonts-loaded .share-wrapper h3 {
-            font-size: 2rem;
+            font-size: 1.75rem;
         }
     }
 
@@ -215,7 +247,7 @@
         }
     }
 
-    .share-wrapper h3.page-intro-1 {
+    .share-wrapper h2.page-intro-1 {
         text-transform: uppercase;
         line-height: 1.25;
     }
@@ -388,7 +420,7 @@
 
     @media (min-width: 90em) {
         #share-header img.share-logo {
-            max-width: 360px;
+            max-width: 300px;
         }
     }
 
@@ -453,7 +485,7 @@
     }
 
     @media (min-width: 70em) {
-        #share-intro h3.page-intro-1 {
+        #share-intro h2.page-intro-1 {
             margin-top: 1em;
         }
     }
@@ -674,7 +706,7 @@
         border-top: 1px solid #000;
     }
 
-    .join-us-footer h3 {
+    .join-us-footer h2 {
         margin-bottom: 0;
     }
 
@@ -839,10 +871,6 @@
     /* .quote-slider .swiper-slide:nth-child(odd) .pull-quote {
         background-color: var(--red2);
     } */
-
-    .pull-quote-inner {
-
-    }
 
     .pull-quote__opening {
         font-size: 7rem;
