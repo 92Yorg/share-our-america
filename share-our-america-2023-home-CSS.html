@@ -148,6 +148,7 @@
         --grey: #f0f0f0;
         --grey2: #d1d2d2;
         --92nyblue: #8eaae2;
+        --92nypink: #edabba;
         --92nyred: #ff5447;
         --92nywine: #990d61;
         --92nygreen: #21805e;
@@ -315,19 +316,44 @@
         padding: 10px;
     }
 
-   ul.share-nav {
+   ul.share-nav, .share-nav {
         padding: 10px 0;
         position: relative;
         z-index: 3;
         text-align: center;
     }
 
-    ul.share-nav li {
+    ul.share-nav li, .share-nav div {
         display: inline-block;
         padding: 2px 0;
         margin-left: 1em;
         text-transform: uppercase;
         font-weight: 500;
+    }
+
+    ul.share-nav li a {
+        position: relative;
+        z-index: 3;
+    }
+
+    ul.share-nav li a:hover::after {
+        content: '\00A0';
+        display: block;
+        background: #d5d5d5;
+        width: calc(100% + 20px);
+        height: 50%;
+        position: absolute;
+        bottom: 0;
+        left: -10px;
+        z-index: -1;
+    }
+
+    #share-preheader ul.share-nav li a:hover {
+        color: var(--92nypink);
+    }
+
+    #share-preheader ul.share-nav li a:hover::after {
+        display: none;
     }
 
     .share-nav-highlight a,
@@ -343,7 +369,7 @@
         display: block;
         background: #edabba;
         width: calc(100% + 20px);
-        line-height: .5;
+        height: 50%;
         /* opacity: .5; */
         position: absolute;
         bottom: 0;
