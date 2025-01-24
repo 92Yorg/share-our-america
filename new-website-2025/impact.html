@@ -1,0 +1,1377 @@
+<style type="text/css">
+    body {
+        background-color: #fff;
+        min-height: 100vh;
+    }
+
+    .share-wrapper h1 {
+        text-transform: uppercase;
+    }
+
+    #pnl_emailSignup {
+        display: none!important;
+    }
+
+    .bg-red-shape {
+        background-image: url(/92StreetY/media/img/Innovation/share-our-america-red-shape.svg);
+        background-position: top center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .bg-ltblue-shape {
+        background-image: url(/92StreetY/media/img/Innovation/share-our-america-soft-blue-shape.svg);
+        background-position: top center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .hero-panel__suffix {
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #fff;
+        line-height: 1.25;
+    }
+
+    #hero-image1 {
+        position: relative;
+        z-index: 2;
+    }
+
+    #hero-image2 {
+        margin-top: -80px;
+        position: relative;
+        z-index: 3;
+        width: 60%;
+        display: inline-block;
+    }
+
+    @media (min-width: 50em) {
+        #hero-image2 {
+            width: auto;
+            margin-right: -20px;
+        }
+    }
+
+    @media (min-width: 70em) {
+        #hero-image2 {
+            margin-right: -50px;
+        }
+
+        #body-image1 {
+            margin-left: -50px;
+        }
+
+        #body-image2 {
+            margin-right: -50px;
+        }
+    }
+
+
+    .page-layout {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    .page-layout-padding-top {
+        padding-top: 1em;
+    }
+
+    .u-padded-bottom {
+        padding-bottom: 1em;
+    }
+
+    @media (min-width: 50em) {
+        .u-padded-bottom {
+            padding-bottom: 2em;
+        }
+    }
+
+    .u-ratio {
+        overflow: hidden;
+    }
+
+    @media (min-width: 30em) {
+        .padding-top-more {
+            padding-top: 3em;
+        }
+    }
+
+    @media (min-width: 50em) {
+        .padding-top-more {
+            padding-top: 4em;
+        }
+    }
+
+    .o-figure {
+        margin-bottom: 0;
+    }
+
+    @media (min-width: 30em) {
+
+        .o-grid--2up, .o-grid--4up {
+            margin-left: -20px;
+        }
+
+        .o-grid--2up .o-grid__item,
+        .o-grid--4up .o-grid__item {
+            margin-left: 10px;
+            padding-left: 10px;
+            margin-bottom: 20px;
+            width: calc(50% - 20px);
+            margin: 0 0 0 20px;
+            padding-left: 0;
+        }
+    }
+
+    @media (min-width: 50em) {
+
+        .o-grid--2up .o-grid__item,
+        .o-grid--4up .o-grid__item {
+            margin-bottom: 0;
+        }
+    }
+
+    div {
+        --red1dk: #811b1e;
+        --red2: #d12329;
+        --red3lt: #e66775;
+        --red4lt: #ec8c80;
+        --blue1: #055ca0;
+        --blue2: #5b84c1;
+        --blue3: #81b7e0;
+        --slategreydark: #1d2743;
+        --grey: #f0f0f0;
+        --grey2: #d1d2d2;
+        --92nyblue: #8eaae2;
+        --92nypink: #edabba;
+        --92nyred: #ff5447;
+        --92nywine: #990d61;
+        --92nygreen: #21805e;
+    }
+
+    .share-wrapper {
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* @media (min-width: 50em) {
+        .share-wrapper h2 {
+            font-size: 2.5rem;
+        }
+    } */
+
+    .share-wrapper h1,
+    .fonts-loaded .share-wrapper h1 {
+        font-size: 1.5rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    
+    .share-wrapper h2,
+    .fonts-loaded .share-wrapper h2 {
+        font-size: 1.375rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-bottom: 0.25em;
+    }
+
+    .share-wrapper h3,
+    .fonts-loaded .share-wrapper h3 {
+        font-size: 1.25rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-bottom: 0.25em;
+        text-align: center;
+    }
+
+    @media (min-width: 50em) {
+
+        .share-wrapper h1,
+        .fonts-loaded .share-wrapper h1  {
+            font-size: 1.75rem;
+        }
+
+        .share-wrapper h2,
+        .fonts-loaded .share-wrapper h2  {
+            font-size: 1.5rem;
+        }
+
+        .share-wrapper h3,
+        .fonts-loaded .share-wrapper h3  {
+            font-size: 1.25rem;
+        }
+    }
+
+    @media (min-width: 70em) {
+
+        .share-wrapper h1,
+        .fonts-loaded .share-wrapper h1 {
+            font-size: 2.5rem;
+        }
+
+        .share-wrapper h2,
+        .fonts-loaded .share-wrapper h2 {
+            font-size: 2rem;
+        }
+
+        .share-wrapper h3,
+        .fonts-loaded .share-wrapper h3 {
+            font-size: 1.75rem;
+        }
+    }
+
+    .share-wrapper p,
+    .share-wrapper li {
+        font-size: 1rem;
+    }
+
+    @media (min-width: 70em) {
+        .share-wrapper p,
+        .share-wrapper li {
+            font-size: 1.125rem;
+        }
+    }
+
+    .share-wrapper p.page-intro-2 {
+        font-size: 1.375rem;
+    }
+
+    @media (min-width: 50em) {
+        .share-wrapper p.page-intro-2 {
+            font-size: 1.625rem;
+        }
+    }
+
+    .share-wrapper h2.page-intro-1 {
+        text-transform: uppercase;
+        line-height: 1.25;
+    }
+
+    #share-info {
+        background: var(--92nyblue);
+        padding: 16px 20px;
+    }
+
+    @media (min-width: 40em) {
+        #share-info {
+            margin-left: 10px;
+            display: inline-block;
+        }
+    }
+
+    @media (min-width: 50em) {
+        #share-info {
+            margin-left: 20px;
+        }
+    }
+
+    @media (min-width: 70em) {
+        #share-info {
+            margin-left: 40px;
+        }
+    }
+
+    .share-wrapper #share-info .btn {
+        background-color: var(--blue3);
+        color: var(--slategreydark);
+    }
+
+    .share-wrapper #share-info .btn:hover {
+        background-color: var(--blue2)
+    }
+
+    #share-top {
+        position: relative;
+    }
+
+
+    #share-header {
+        /* color: var(--blue1); */
+        /* background-color: var(--grey); */
+        position: relative;
+        border-bottom: 1px solid #000;
+    }
+
+    #share-header .o-grid {
+        align-items: center;
+    }
+
+    .share-logo-container {
+        display: block;
+        text-align: center;
+    }
+
+    #share-header img.share-logo {
+        width: 100%;
+        z-index: 3;
+        max-width: 250px;
+        display: inline-block;
+        padding: 10px;
+    }
+
+   ul.share-nav, .share-nav {
+        padding: 10px 0;
+        position: relative;
+        z-index: 3;
+        text-align: center;
+    }
+
+    ul.share-nav li, .share-nav div {
+        display: inline-block;
+        padding: 2px 0;
+        margin-left: 1em;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+    ul.share-nav li a {
+        position: relative;
+        z-index: 3;
+    }
+
+    ul.share-nav li a:hover::after {
+        content: '\00A0';
+        display: block;
+        background: #d5d5d5;
+        width: calc(100% + 20px);
+        height: 50%;
+        position: absolute;
+        bottom: 0;
+        left: -10px;
+        z-index: -1;
+    }
+
+    #share-preheader ul.share-nav li a {
+        color: var(--92nypink);
+        font-weight: 900;
+    }
+
+    #share-preheader ul.share-nav li a:hover {
+        color: #d5d5d5;
+    }
+
+    #share-preheader ul.share-nav li a:hover::after {
+        display: none;
+    }
+
+    .share-nav-highlight a,
+    a.share-nav-highlight  {
+        font-weight: bold;
+        position: relative;
+        z-index: 3;
+    }
+
+    .share-nav-highlight a::after,
+    a.share-nav-highlight::after {
+        content: '\00A0';
+        display: block;
+        background: #edabba;
+        width: calc(100% + 20px);
+        height: 50%;
+        /* opacity: .5; */
+        position: absolute;
+        bottom: 0;
+        left: -10px;
+        z-index: -1;
+    }
+
+    .share-nav-highlight a:hover::after,
+    a.share-nav-highlight:hover::after {
+        background: #d5d5d5;
+    }
+
+    @media (min-width: 30em) {
+        .share-logo-container {
+            text-align: left;
+        }
+
+        ul.share-nav {
+            text-align: right;
+        }
+
+        #share-header img.share-logo {
+            width: 40vw;
+            max-width: 220px;
+            padding-left: 0;
+            display: block;
+        }
+    }
+
+    @media (min-width: 30em) {
+        #share-header .o-grid--2up .o-grid__item:nth-of-type(odd) {
+            width: calc(40% - 20px);
+        }
+
+        #share-header .o-grid--2up .o-grid__item:nth-of-type(even) {
+            width: calc(60% - 20px);
+        }
+    }
+
+    @media (min-width: 50em) {
+        .share-nav-highlight a::after {
+            line-height: 12px;
+        }
+        #share-header img.share-logo {
+            max-width: 260px;
+        }
+    }
+
+    @media (min-width: 62em) {
+        #share-header .o-grid--2up .o-grid__item:nth-of-type(odd) {
+            width: calc(30% - 20px);
+        }
+
+        #share-header .o-grid--2up .o-grid__item:nth-of-type(even) {
+            width: calc(70% - 20px);
+        }
+        ul.share-nav li {
+            font-size: 125%;
+            margin-left: 2em;
+        }
+        #share-header img.share-logo {
+            max-width: 280px;
+        }
+    }
+
+    @media (min-width: 80em) {
+        .share-logo-container {
+            position: relative;
+            left: -4em;
+        }
+        #share-header img.share-logo {
+            max-width: 280px;
+        }
+    }
+
+    @media (min-width: 90em) {
+        #share-header img.share-logo {
+            max-width: 300px;
+        }
+    }
+
+    /* #share-hero h2.share-date {
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+
+    @media (min-width: 30em) {
+        #share-hero h2.share-date {
+            font-size: 2rem;
+            margin-left: -40px;
+        }
+    }
+
+    @media (min-width: 50em) {
+        #share-hero h2.share-date {
+            font-size: 2.5rem;
+            margin-left: -50px;
+        }
+    }
+
+    @media (min-width: 70em) {
+        #share-hero h2.share-date {
+            font-size: 3rem;
+            margin-left: -50px;
+        }
+    } */
+
+
+
+    @media (min-width: 50em) {
+        #share-intro .o-2col__primary,
+        #share-about-page .o-2col__primary  {
+            width: 57%;
+        }
+
+        #share-intro .o-2col__secondary,
+        #share-about-page .o-2col__secondary {
+            width: 40%;
+        }
+    }
+
+
+    @media (min-width: 50em) {
+        .body-2col .o-2col__primary {
+            width: 72%;
+        }
+
+        .body-2col .o-2col__secondary {
+            width: 25%;
+        }
+    }
+
+
+    #share-about .o-grid__item {
+        position: relative;
+    }
+
+    #share-intro {
+        position: relative;
+    }
+
+    @media (min-width: 70em) {
+        #share-intro h2.page-intro-1 {
+            margin-top: 1em;
+        }
+    }
+
+    /* #share-main {
+        color: var(--slategreydark);
+    } */
+
+    #share-main .u-constrained {
+        position: relative;
+    }
+
+    #share-main .o-grid {
+        align-items: center;
+    }
+
+    #share-inclusions {
+        color: var(--blue1);
+    }
+
+    #share-inclusions .o-grid__item:first-child {
+        position: relative;
+    }
+
+    #share-inclusions .o-grid__item:nth-child(2) {
+        position: relative;
+        z-index: 2;
+    }
+
+    @media (min-width: 30em) {
+        #share-inclusions .o-grid__item:nth-child(2) {
+            margin-left: -40px;
+        }
+    }
+
+    @media (min-width: 50em) {
+        #share-inclusions .o-grid__item:nth-child(2) {
+            margin-left: -50px;
+        }
+    }
+
+    #share-inclusions2 {
+        color: var(--blue1);
+    }
+
+    #share-inclusions2 .u-constrained {
+        background-color: var(--red4lt);
+        padding: 1em;
+    }
+
+    @media (min-width: 50em) {
+        #share-inclusions2 .u-constrained {
+            padding: 2em;
+        }
+    }
+
+    #share-inclusions2 li {
+        margin-bottom: .5em;
+    }
+
+    #share-form {
+        overflow: hidden;
+    }
+
+    #share-form .u-constrained {
+        position: relative;
+        margin-bottom: 2em;
+    }
+
+    #share-form p {
+        color: var(--blue1);
+    }
+
+    .share-wrapper #share-form .FormPanel {
+        color: var(--slategreydark);
+    }
+
+    .share-wrapper #share-form .FormPanel p {
+        font-size: 1rem;
+    }
+
+    .share-wrapper .FormButton.btn {
+        color: #000;
+        position: relative;
+        z-index: 3;
+        display: inline;
+        font-size: 1.75rem;
+        line-height: 1.25;
+        padding: 0 10px;
+        border-radius: 0;
+        background: #fff url('/92StreetY/media/img/Innovation/share-our-america-underline-bg.png');
+        background-position: center center;
+        background-repeat: repeat;
+    }
+
+    .share-wrapper .FormButton.btn:hover {
+        color: #000;
+        background: #fff url('/92StreetY/media/img/Innovation/share-our-america-underline-bg-hover.png');
+        background-position: center center;
+    }
+
+    .share-wrapper #share-form .btn {
+        background-color: var(--blue3);
+        color: var(--slategreydark);
+        width: 100%;
+    }
+
+    .share-wrapper #share-form .btn:hover {
+        background-color: var(--blue2)
+    }
+
+    .share-wrapper .logo {
+        background: none;
+    }
+
+    .share-wrapper .case-study-item {
+        margin-bottom: 1em;
+    }
+
+    @media (max-width: 49.99em) {
+        .share-wrapper .case-study-item {
+            display: block;
+        }
+        .share-wrapper .case-study-item .subscription-item.has-image .subscription-item__media {
+            width: auto;
+        }
+    }
+
+    @media (max-width: 29.99em) {
+        .share-wrapper .case-study-item.subscription-item.has-image .subscription-item__media {
+            width: auto;
+        }
+    }
+
+    @media (min-width: 30em) and (max-width: 49.99em) {
+        .share-wrapper .case-study-item.subscription-item.has-image .subscription-item__media {
+            width: auto;
+            padding: 1.25%;
+        }
+    }
+
+    .share-wrapper .case-study-item .subscription-item__title {
+        text-transform: none;
+        text-align: left;
+    }
+
+    .case-study-header {
+        text-align: center;
+    }
+
+    .share-wrapper.case-study h1 {
+        text-transform: none;
+        margin-bottom: 0.5em;
+    }
+
+    .share-wrapper .image-slider__item {
+        width: 100%;
+        background: #fff;
+        padding: 1em;
+        border: 2px solid;
+    }
+
+    .share-wrapper .image-slider__text {
+        margin-top: 1em;
+    }
+
+    .share-wrapper .image-slider__text p {
+        font-style: italic;
+    }
+
+    @media (min-width: 30em) {
+        .share-wrapper .image-slider__item {
+            display: flex;
+            align-items: center;
+        }
+        .share-wrapper .image-slider__media {
+            width: 50%;
+            max-width: 400px;
+            height: fit-content;
+        }
+        .share-wrapper .image-slider__text {
+            margin-top: 0;
+            margin-left: 1em;
+        }
+        .share-wrapper .image-slider__text p {
+            font-size: 120%;
+        }
+        .share-wrapper .image-slider__text cite {
+            text-align: left;
+        }    
+    }
+
+    .subscription-item__description {
+        display: block;
+    }
+
+    #share-footer {
+        background-color: #000;
+        color: #fff;
+        position: relative;
+        z-index: 3;
+        overflow: hidden;
+    }
+
+    #share-footer .u-constrained {
+        position: relative;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    #share-footer p {
+        font-size: 1.125rem;
+        margin-bottom: 1em;
+    }
+
+    #share-footer ul {
+        align-items: center;
+    }
+
+    .footer-logo-inner {
+        width: 100%;
+        max-width: 350px;
+        color: #fff;
+        display: inline-block;
+    }
+
+    .footer-logo g {
+        fill: #fff;
+    }    
+
+    .join-us-footer {
+        /* background-color: var(--grey); */
+        border-top: 1px solid #000;
+    }
+
+    .join-us-footer h2 {
+        margin-bottom: 0;
+    }
+
+    .btn-outline {
+        padding: .5em 1em;
+        border: 1px solid;
+        display: inline-block;
+    }
+
+    .btn-outline:hover {
+        color: var(--red4lt);
+    }
+
+
+    /* .blue3-shape1 {
+  background-color: var(--blue3);
+  -webkit-mask: url(/92StreetY/media/img/Institutional/Share-Our-America/shareAm-shape1.svg) no-repeat 50% 50%;
+  mask: url(/92StreetY/media/img/Institutional/Share-Our-America/shareAm-shape1.svg) no-repeat 50% 50%;
+  position: absolute;
+  z-index: 1;
+}
+ */
+
+    .shape-bg3 {
+        position: absolute;
+        height: 120%;
+        bottom: -1em;
+        left: -10%;
+        opacity: 0.4;
+        z-index: -1;
+    }
+
+    @media (min-width: 50em) {
+        .shape-bg3 {
+            bottom: -2em;
+        }
+    }
+
+    .shape-bg3 polygon {
+        fill: var(--red3lt);
+    }
+
+    .shape-bg1 {
+        position: absolute;
+        height: 200%;
+        top: -25%;
+        left: -50%;
+        opacity: 0.3;
+    }
+
+    @media (max-width: 49.99em) {
+        .shape-bg1 {
+            display: none;
+        }
+    }
+
+    @media (min-width: 50em) {
+        .shape-bg1 {
+            left: -20%;
+        }
+    }
+
+    .shape-bg1 polygon {
+        fill: var(--blue2);
+    }
+
+    .shape-bg5 {
+        position: absolute;
+        height: 110%;
+        bottom: 0%;
+        right: -10%;
+        opacity: 0.5;
+        z-index: -1;
+    }
+
+    .shape-bg5 polygon {
+        fill: var(--blue3);
+    }
+
+    .shape-bg2 {
+        position: absolute;
+        height: 300%;
+        right: -22%;
+        top: 15%;
+        z-index: 0;
+        opacity: 0.5;
+    }
+
+    /* @media (min-width: 50em) {
+        .shape-bg2 {
+            height: 50%;
+            right: 5%;
+        }
+    } */
+
+    .shape-bg2 polygon {
+        fill: var(--red4lt);
+    }
+
+    .shape-bg6 {
+        position: absolute;
+        height: 20%;
+        bottom: -10%;
+        right: 10%;
+        mix-blend-mode: multiply;
+        opacity: 0.6;
+    }
+
+    @media (max-width: 799.99px) {
+        .shape-bg6 {
+            display: none;
+        }
+    }
+
+    .shape-bg6 polygon {
+        fill: var(--red3lt);
+    }
+
+    .text-blend-wrapper {
+        position: relative;
+        z-index: 2;
+        /* mix-blend-mode: multiply; */
+    }
+
+    .quote-slider .swiper-slide .pull-quote {
+        background-color: var(--92nywine);
+        color: #fff;
+        display: flex;
+        align-items: center;
+    }
+
+    .image-slider__inner {
+        padding-bottom: 35px;
+    }
+
+    @media (min-width: 56.25em) {
+        .swiper-slide {
+            padding-bottom: 0;
+        }
+    }
+    
+    .quote-slider__inner {
+        padding-bottom: 30px;
+    }
+    
+    @media (min-width: 62.5em) {
+        .quote-slider__inner {
+            padding-bottom: 30px;
+        }
+    }
+
+    .quote-slider .swiper-pagination {
+        bottom: 0;
+    }
+
+    .swiper-pagination-bullet {
+        width: 15px;
+        height: 15px;
+        opacity: unset;
+    }
+
+    /* .quote-slider .swiper-slide:nth-child(odd) .pull-quote {
+        background-color: var(--red2);
+    } */
+
+    .pull-quote__opening {
+        font-size: 7rem;
+        top: 0px;
+    }
+
+    .quote-slider cite {
+        font-style: italic;
+    }
+
+    .logo-grid h3 {
+        margin: 0;
+    }
+
+    .logo__media {
+        padding: 0;
+        height: 120px;
+    }
+
+    @media (min-width: 30em) {
+        .logo__media {
+            height: 140px;
+        }
+    }
+    
+    @media (min-width: 50em) {
+        .logo__media {
+            padding: 0;
+        }
+    }
+
+    @media (min-width: 50em) {
+        .page-layout-tall {
+            padding-top: 3em;
+            padding-bottom: 3em;
+        }
+    }
+
+    .o-grid--2up .o-grid__item.bg-box {
+        color: #fff;
+        padding: 15px 15px 0 15px;
+    }
+    
+    .bg-box.bg-box_green {
+        background-color: var(--92nygreen);
+    }
+    .bg-box.bg-box_wine {
+        background-color: var(--92nywine);
+    }
+</style>
+
+<!-- HEADER -->
+<section class="u-tone-background-dark" id="share-preheader">
+<div class="u-constrained u-constrained--narrow">
+<ul class="share-nav">
+	<li id="nav-toolkit"><b>NEW!</b> <a href="/shareouramerica/toolkit"><i>Toolkit for Organizations</i></a></li>
+</ul>
+</div>
+</section>
+
+<section class="u-tone-background-white" id="share-header">
+<div class="u-constrained u-constrained--narrow">
+<ul class="o-grid o-grid--2up">
+	<li class="o-grid__item"><a class="share-logo-container" href="/shareouramerica"><img alt="Share Our America logo" class="share-logo" src="/92StreetY/media/img/Innovation/share-our-america_Logo_Wine.svg"> </a></li>
+	<li class="o-grid__item">
+	<ul class="share-nav">
+		<li id="nav-about"><a href="/shareouramerica/about">About</a></li>
+		<li id="nav-impact"><a href="/shareouramerica/impact">Impact</a></li>
+		<li id="nav-case-studies"><a href="/shareouramerica/case-studies">Case Studies</a></li>
+		<li id="nav-join"><a href="/shareouramerica/join-us">Join Us</a></li>
+		<li class="share-nav-highlight" id="nav-donate"><a href="/shareouramerica/Donate">Donate</a></li>
+	</ul>
+	</li>
+</ul>
+</div>
+</section>
+<!-- /End HEADER -->
+
+<!-- BODY -->
+
+<section class="page-slice u-tone-background-white">
+  
+    <section class="page-slice u-tone-background-white">
+      <div class="u-tone-background-white">
+  <style type="text/css">/* .share-wrapper h1, .share-wrapper h2, .share-wrapper h3, .share-wrapper p {
+        position: relative;
+        z-index: 1;
+    } */
+    #impact-intro {
+        padding: 2em 0;
+        position: relative;
+    }
+    #impact-intro p {
+        font-size: 125%;
+    }
+
+    @media (max-width: 29.99em) {
+        .impact-list .o-grid__item:nth-child(2) {
+            margin-top: 1em;
+        }
+    }
+
+    .impact-list ul {
+        list-style: none;
+        padding: 0;
+        position: relative;
+        z-index: 2;
+    }
+    .impact-list ul li {
+        margin-bottom: 1em;
+    }
+    .impact-list h2 {
+        margin: 0;
+        color: #e5e6e9;
+        position: relative;
+        font-size: 5em;
+        margin-top: -.75em;
+        font-weight: 700;
+    }
+    @media (min-width: 50em) {
+        .impact-list h2 {
+            font-size: 6em;
+        }
+    }
+    @media (min-width: 65em) {
+        .impact-list h2 {
+            font-size: 9em;
+            margin-top: -0.5em;
+        }
+    }
+    .shape-bg6 {
+        position: absolute;
+        height: 180%;
+        right: -10%;
+        top: -60%;
+        z-index: 0;
+        opacity: 0.3;
+    }
+    .shape-bg6 polygon {
+        fill: var(--blue2);
+    }
+</style>
+
+
+
+
+
+</div>
+
+
+
+<section class="page-layout share-wrapper u-padded-bottom share-wrapper">
+<div class="u-constrained u-constrained--narrow">
+<div class="page-layout">
+<h1>Impact</h1>
+</div>
+
+<div class="page-layout">
+<figure class="o-figure" itemscope="" itemtype="http://schema.org/VideoObject">
+<div class="o-embed o-embed--video"><iframe allowfullscreen="" class="o-embed__iframe" frameborder="0" height="720" src="https://player.vimeo.com/video/730469679?h=5536f5c49d" width="1280" data-gtm-yt-inspected-74="true" data-gtm-yt-inspected-6993344_9="true"></iframe></div>
+</figure>
+</div>
+
+<div class="u-constrained u-constrained--skinny" id="impact-intro">
+<p>Share Our America has helped communities redefine public safety on high school campuses, equipped local business owners to become community champions, and inspired hundreds of everyday people to forge unlikely relationships — and we aren’t stopping there.</p>
+
+<p>Initiated in 2021 by the 92NY’s Belfer Center for Innovation &amp; Social Impact (the founders of Giving Tuesday, Ben Franklin Circles, Women inPower, and the Social Good Summit), we resource local leaders with the knowledge and materials to run their own Share Our America gatherings. We use research-backed facilitated dialogue, intergroup contact theory, and shared meals proven to repair relationships and bring us away from what we hear in the news and toward the people around us.</p>
+
+<p>86% of Americans think we can improve our trust in one another. That’s why Share Our America allows participants to step outside preconceived notions, reconnect, and create the foundation for change in their community.</p>
+</div>
+
+<h3>What we’re hearing</h3>
+
+<ul class="o-grid o-grid--2up page-layout impact-list">
+	<li class="o-grid__item">
+	<figure class="o-figure" id="hero-image1" itemscope="" itemtype="http://schema.org/ImageObject">
+	<div class="u-ratio u-ratio--5-3"><img alt="Three people laughing outside in Chadron" class="o-figure__media" src="/92StreetY/media/img/Innovation/share-our-america-chardron-three-people-laughing.jpg"></div>
+	</figure>
+	</li>
+	<li class="o-grid__item">
+	<ul>
+		<li><b>98%</b> of participants report better understanding people whose opinions, beliefs and backgrounds differ from theirs.</li>
+		<li><b>85%</b> of participants report an improved ability to communicate with people different from them, and an ability to listen to opinions far removed from their own without judgment.</li>
+	</ul>
+	<!-- <h2>100%</h2> --></li>
+</ul>
+
+<div class="o-2col o-2col--reversed impact-list">
+<div class="o-2col__primary">
+<figure class="o-figure" id="hero-image1" itemscope="" itemtype="http://schema.org/ImageObject">
+<div class="u-ratio u-ratio--16-9"><img alt="Chair in North Penn with sign reading: How does identity have the greatest effect on how you see yourself?" class="o-figure__media" src="/92StreetY/media/img/Innovation/share-our-america-identity-chair.jpg"></div>
+</figure>
+</div>
+
+<div class="o-2col__secondary">
+<ul>
+	<li><b>83%</b> report developing an increased sense of trust for people different from them.</li>
+	<li><b>85%</b> report having greater respect.</li>
+	<li><b>90%</b> report developing meaningful relationships and plans to keep in touch.</li>
+</ul>
+<!-- <h2>82%</h2> --></div>
+</div>
+
+<ul class="o-grid o-grid--2up page-layout impact-list">
+	<li class="o-grid__item">
+	<figure class="o-figure" id="hero-image1" itemscope="" itemtype="http://schema.org/ImageObject">
+	<div class="u-ratio u-ratio--5-3"><img alt="Group sitting in Memphis" class="o-figure__media" src="/92StreetY/media/img/Innovation/share-our-america-memphis-group-sitting.jpg"></div>
+	</figure>
+	</li>
+	<li class="o-grid__item">
+	<p>Participants become advocates and promoters for expanding the work locally, with many volunteering to co-organize future gatherings.</p>
+
+	<ul>
+		<li>Participants report <b>9/10</b> likelihood of recommending a similar experience to a friend, family member or colleague.</li>
+		<li>Local leaders report <b>10/10</b> likelihood of recommending leading a Share Our America gathering.</li>
+		<li><b>100%</b> of participants and local leaders report plans to share what they learned with family and friends — and want to see more bridge-building gatherings like this in their communities.</li>
+	</ul>
+	<!-- <h2>91%</h2> --></li>
+</ul>
+
+<div class="quote-slider page-layout" style="margin-top: 1em; margin-bottom: 1em;">
+<div class="quote-slider__inner js-slider-container swiper-container slider0 swiper-container-horizontal" data-slider-speed="400" data-slides-per-view="3">
+<div class="swiper-wrapper" style="transform: translate3d(-1095px, 0px, 0px); transition-duration: 0ms;"><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="7" style="width: 349px; margin-right: 16px;"><blockquote class="pull-quote js-slider-panel">
+<div class="pull-quote-inner">
+<p class="pull-quote__text"><span class="pull-quote__opening">“</span>In the conversations, there were things that I didn't agree with, but I didn't have that knee-jerk response of 'you're wrong.' It was more like, this person feels this way, but I still like them even though that opinion or that belief is a little weird for me.</p>
+<cite>Margaret, Davis CA</cite></div>
+</blockquote></div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="8" style="width: 349px; margin-right: 16px;"><blockquote class="pull-quote js-slider-panel">
+<div class="pull-quote-inner">
+<p class="pull-quote__text"><span class="pull-quote__opening">“</span>I’ve learned that people are not always who the other person thinks they are. I found out that people listen. People are very thoughtful, and most everyone has a true belief in moving this world along with everybody having a say and everybody participating.</p>
+<cite>Ronne, Fort Lee, NJ</cite></div>
+</blockquote></div><div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="9" style="width: 349px; margin-right: 16px;"><blockquote class="pull-quote js-slider-panel">
+<div class="pull-quote-inner">
+<p class="pull-quote__text"><span class="pull-quote__opening">“</span>I’ve been very impressed with the sense of community that has been built here. And I would like to find a way to spread that sense of community to my community out here, to Chadron, and then somehow cause that to be caught on to the rest of our state and our country because we so need to understand each other better than we do now.</p>
+<cite>Jim, Chadron, NE</cite></div>
+</blockquote></div><div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="width: 349px; margin-right: 16px;"><blockquote class="pull-quote js-slider-panel">
+<div class="pull-quote-inner">
+<p class="pull-quote__text"><span class="pull-quote__opening">“</span>This experience reinforced my commitment to others by listening and honoring each individual with whom I encounter.</p>
+<cite>Carol, Chadron, NE</cite></div>
+</blockquote></div><div class="swiper-slide swiper-slide-next" data-swiper-slide-index="1" style="width: 349px; margin-right: 16px;"><blockquote class="pull-quote js-slider-panel">
+<div class="pull-quote-inner">
+<p class="pull-quote__text"><span class="pull-quote__opening">“</span>These conversations are where real change can begin — and this was just the beginning.</p>
+<cite>Tanja, Memphis, TN</cite></div>
+</blockquote></div><div class="swiper-slide" data-swiper-slide-index="2" style="width: 349px; margin-right: 16px;"><blockquote class="pull-quote js-slider-panel">
+<div class="pull-quote-inner">
+<p class="pull-quote__text"><span class="pull-quote__opening">“</span>It was great to hear someone’s deep conviction, sitting face-to-face, eye-to-eye, with someone whose ideas regarding abortion were the antithesis of mine. Just listening was incredibly valuable.</p>
+<cite>Lilian, New York, NY</cite></div>
+</blockquote></div><div class="swiper-slide" data-swiper-slide-index="3" style="width: 349px; margin-right: 16px;"><blockquote class="pull-quote js-slider-panel">
+<div class="pull-quote-inner">
+<p class="pull-quote__text"><span class="pull-quote__opening">“</span>Our first gathering was a necessary catalyst for us as we continue to plan productive dialogue on what a safe community really means.</p>
+<cite>Pamula, North Penn, PA</cite></div>
+</blockquote></div><div class="swiper-slide" data-swiper-slide-index="4" style="width: 349px; margin-right: 16px;"><blockquote class="pull-quote js-slider-panel">
+<div class="pull-quote-inner">
+<p class="pull-quote__text"><span class="pull-quote__opening">“</span>I’ve been happy to learn that ’re all so similar in our politics and even in the various religions. Our bottom line is still very much the same in how we care for people.</p>
+<cite>Kristy, Chadron, NE</cite></div>
+</blockquote></div><div class="swiper-slide" data-swiper-slide-index="5" style="width: 349px; margin-right: 16px;"><blockquote class="pull-quote js-slider-panel">
+<div class="pull-quote-inner">
+<p class="pull-quote__text"><span class="pull-quote__opening">“</span>These conversations open up the door for relationships that can reach across communities and neighborhoods that never would have happened without Share Our America.</p>
+<cite>Will, Chattanooga, TN</cite></div>
+</blockquote></div><div class="swiper-slide" data-swiper-slide-index="6" style="width: 349px; margin-right: 16px;"><blockquote class="pull-quote js-slider-panel">
+<div class="pull-quote-inner">
+<p class="pull-quote__text"><span class="pull-quote__opening">“</span>I think the exposure to a place I would never have otherwise thought to travel to, and the opportunity to meet and talk to people who live and have lived such different lives than I, those opportunities exceeded my expectations.</p>
+<cite>Lynn, New York, NY</cite></div>
+</blockquote></div><div class="swiper-slide" data-swiper-slide-index="7" style="width: 349px; margin-right: 16px;"><blockquote class="pull-quote js-slider-panel">
+<div class="pull-quote-inner">
+<p class="pull-quote__text"><span class="pull-quote__opening">“</span>In the conversations, there were things that I didn't agree with, but I didn't have that knee-jerk response of 'you're wrong.' It was more like, this person feels this way, but I still like them even though that opinion or that belief is a little weird for me.</p>
+<cite>Margaret, Davis CA</cite></div>
+</blockquote></div><div class="swiper-slide" data-swiper-slide-index="8" style="width: 349px; margin-right: 16px;"><blockquote class="pull-quote js-slider-panel">
+<div class="pull-quote-inner">
+<p class="pull-quote__text"><span class="pull-quote__opening">“</span>I’ve learned that people are not always who the other person thinks they are. I found out that people listen. People are very thoughtful, and most everyone has a true belief in moving this world along with everybody having a say and everybody participating.</p>
+<cite>Ronne, Fort Lee, NJ</cite></div>
+</blockquote></div><div class="swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="9" style="width: 349px; margin-right: 16px;"><blockquote class="pull-quote js-slider-panel">
+<div class="pull-quote-inner">
+<p class="pull-quote__text"><span class="pull-quote__opening">“</span>I’ve been very impressed with the sense of community that has been built here. And I would like to find a way to spread that sense of community to my community out here, to Chadron, and then somehow cause that to be caught on to the rest of our state and our country because we so need to understand each other better than we do now.</p>
+<cite>Jim, Chadron, NE</cite></div>
+</blockquote></div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" style="width: 349px; margin-right: 16px;"><blockquote class="pull-quote js-slider-panel">
+<div class="pull-quote-inner">
+<p class="pull-quote__text"><span class="pull-quote__opening">“</span>This experience reinforced my commitment to others by listening and honoring each individual with whom I encounter.</p>
+<cite>Carol, Chadron, NE</cite></div>
+</blockquote></div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="1" style="width: 349px; margin-right: 16px;"><blockquote class="pull-quote js-slider-panel">
+<div class="pull-quote-inner">
+<p class="pull-quote__text"><span class="pull-quote__opening">“</span>These conversations are where real change can begin — and this was just the beginning.</p>
+<cite>Tanja, Memphis, TN</cite></div>
+</blockquote></div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2" style="width: 349px; margin-right: 16px;"><blockquote class="pull-quote js-slider-panel">
+<div class="pull-quote-inner">
+<p class="pull-quote__text"><span class="pull-quote__opening">“</span>It was great to hear someone’s deep conviction, sitting face-to-face, eye-to-eye, with someone whose ideas regarding abortion were the antithesis of mine. Just listening was incredibly valuable.</p>
+<cite>Lilian, New York, NY</cite></div>
+</blockquote></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="swiper-pagination pagination-slider0 swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div></div>
+</div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+  
+  
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    
+    function createEmailCookie(name, value, days) {
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            var expires = "; expires=" + date.toGMTString();
+        }
+        else var expires = "";
+        document.cookie = name + "=" + value + expires + "; path=/";
+    }
+
+    function readEmailCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+        }
+        return null;
+    }
+
+    $(document).ready(function () {
+
+        var emailcookie = readEmailCookie('emailSignup');
+
+        if (emailcookie != 1) {
+            $('#pnl_emailSignup').show("slow");
+
+            $("#closeBox").click(function (e) {
+                $("#pnl_emailSignup").hide();
+                if (readEmailCookie('emailSignup') == undefined) {
+                    createEmailCookie('emailSignup', '1', '2');
+                }
+                e.preventDefault();
+            });
+        }
+        else {
+            $('#pnl_emailSignup').hide();
+        }
+    });
+
+</script>
+
+
+  
+  
+  
+</section>
+
+<!-- /End BODY -->
+
+<!-- FOOTER -->
+<div class="share-wrapper" style="margin-bottom: -1.5em;">
+<section class="page-layout-tall page-slice join-us-footer">
+<div class="u-constrained u-constrained--narrow u-txt-align-center">
+<h2 class="u-padded-vertical"><a class="share-nav-highlight" href="/belfer-center-for-innovation-social-impact/share-our-america/join-us"><strong>JOIN US</strong></a></h2>
+</div>
+</section>
+
+<section class="page-layout page-slice" id="share-footer">
+<div class="u-constrained u-constrained--narrow u-txt-align-center">
+<div class="footer-logo u-padded-vertical">
+<div class="footer-logo-inner">
+<p><small>An initiative of</small></p>
+<!--?xml version="1.0" encoding="utf-8"?--><!-- Generator: Adobe Illustrator 26.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --><svg id="a" style="enable-background:new 0 0 401.8 52.2;" version="1.1" viewBox="0 0 401.8 52.2" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <g class="st1"> <path d="M131.9,21V4.7h6.3c1.5,0,2.5,0.1,3.3,0.5c1.4,0.6,2.5,1.9,2.5,3.7c0,1.7-1,3-2.5,3.5c1.8,0.6,3,2,3,4
+                            c0,1.8-0.8,3.2-2.2,3.9c-0.8,0.4-1.7,0.7-3.8,0.7H131.9z M138,6.6h-4v5.1h4c2.6,0,3.8-0.6,3.8-2.5C141.8,7.4,140.8,6.6,138,6.6z
+                            M134,19.1h4.2c2.4,0,4.1-0.6,4.1-2.9c0-2.3-1.8-2.8-4.1-2.8H134V19.1z"></path> <path d="M148.6,15.7c0.1,2.6,1.4,3.9,3.5,3.9c2.1,0,3.1-1.4,3.6-2.2l1.5,1.1c-0.7,1.2-2.4,2.9-5.1,2.9c-3.2,0-5.5-2.1-5.5-6
+                            c0-3.6,2.2-5.9,5.4-5.9c3.4,0,5.2,2.5,5.2,6v0.3H148.6z M155,14.2c0-1.8-1.1-3.3-3.1-3.3c-2,0-3.2,1.3-3.3,3.3H155z"></path> <path d="M161.9,21h-2V4.7h2V21z"></path> <path d="M171,11.1h-2.7V21h-2v-9.9H164V9.6h2.3v-2c0-1,0.2-1.5,0.5-2c0.5-0.8,1.3-1.1,2.6-1.1c0.7,0,1.2,0.1,1.6,0.2v1.7
+                            c-0.4-0.1-0.7-0.1-1.2-0.1c-0.6,0-0.9,0.1-1.2,0.3c-0.2,0.2-0.3,0.6-0.3,1.2v1.8h2.7V11.1z"></path> <path d="M174.2,15.7c0.1,2.6,1.4,3.9,3.5,3.9c2.1,0,3.1-1.4,3.6-2.2l1.5,1.1c-0.7,1.2-2.4,2.9-5.1,2.9c-3.2,0-5.5-2.1-5.5-6
+                            c0-3.6,2.2-5.9,5.4-5.9c3.4,0,5.2,2.5,5.2,6v0.3H174.2z M180.6,14.2c0-1.8-1.1-3.3-3.1-3.3c-2,0-3.2,1.3-3.3,3.3H180.6z"></path> <path d="M187.5,9.6v2.2c0.3-1.2,1.5-2.4,3.4-2.4c0.2,0,0.5,0,0.7,0.1v1.9c-0.3,0-0.5-0.1-0.8-0.1c-2.1,0-3.3,1.5-3.3,3.9V21h-2V9.6
+                            H187.5z"></path> <path d="M209.8,9.5c-0.7-1.9-2.2-3.2-4.4-3.2c-3.3,0-5.1,2.8-5.1,6.6c0,3.9,1.8,6.6,5.1,6.6c2.4,0,3.8-1.4,4.4-3.4l2,0.7
+                            c-0.7,2.2-2.7,4.6-6.5,4.6c-4.7,0-7.3-3.4-7.3-8.4c0-5,2.8-8.4,7.4-8.4c3.5,0,5.5,2.1,6.3,4.2L209.8,9.5z"></path> <path d="M215.5,15.7c0.1,2.6,1.4,3.9,3.5,3.9c2.1,0,3.1-1.4,3.6-2.2l1.5,1.1c-0.7,1.2-2.4,2.9-5.1,2.9c-3.2,0-5.5-2.1-5.5-6
+                            c0-3.6,2.2-5.9,5.4-5.9c3.4,0,5.2,2.5,5.2,6v0.3H215.5z M221.9,14.2c0-1.8-1.1-3.3-3.1-3.3c-2,0-3.2,1.3-3.3,3.3H221.9z"></path> <path d="M236.2,21h-2v-6.3c0-2.9-0.8-3.7-2.5-3.7c-2,0-2.9,1.7-2.9,3.4V21h-2V9.6h2v1.7c0.5-1.1,1.7-2,3.6-2c2.8,0,3.9,1.8,3.9,4.6
+                            V21z"></path> <path d="M245.2,21c-0.5,0.2-1.1,0.3-2,0.3c-1.8,0-2.7-0.7-2.7-2.4v-7.8h-2.4V9.6h2.4V5.5l2-0.5v4.6h2.7v1.5h-2.7v7
+                            c0,1.2,0.3,1.5,1.3,1.5c0.6,0,1.1-0.1,1.4-0.2V21z"></path> <path d="M248.8,15.7c0.1,2.6,1.4,3.9,3.5,3.9s3.1-1.4,3.6-2.2l1.5,1.1c-0.7,1.2-2.4,2.9-5.1,2.9c-3.2,0-5.5-2.1-5.5-6
+                            c0-3.6,2.2-5.9,5.4-5.9c3.4,0,5.2,2.5,5.2,6v0.3H248.8z M255.2,14.2c0-1.8-1.1-3.3-3.1-3.3c-2,0-3.2,1.3-3.3,3.3H255.2z"></path> <path d="M262,9.6v2.2c0.3-1.2,1.5-2.4,3.4-2.4c0.2,0,0.5,0,0.7,0.1v1.9c-0.3,0-0.5-0.1-0.8-0.1c-2.1,0-3.3,1.5-3.3,3.9V21h-2V9.6
+                            H262z"></path> <path d="M278.8,11.1h-2.7V21h-2v-9.9h-2.3V9.6h2.3v-2c0-1,0.2-1.5,0.5-2c0.5-0.8,1.3-1.1,2.6-1.1c0.7,0,1.2,0.1,1.6,0.2v1.7
+                            c-0.4-0.1-0.7-0.1-1.2-0.1c-0.6,0-0.9,0.1-1.2,0.3c-0.2,0.2-0.3,0.6-0.3,1.2v1.8h2.7V11.1z"></path> <path d="M285.4,9.3c3.3,0,5.4,2.4,5.4,6c0,3.6-2.1,6-5.4,6s-5.4-2.3-5.4-6C280,11.7,282,9.3,285.4,9.3z M285.4,19.7
+                            c2,0,3.4-1.6,3.4-4.4c0-2.8-1.3-4.4-3.4-4.4c-2,0-3.4,1.6-3.4,4.4C282,18.1,283.4,19.7,285.4,19.7z"></path> <path d="M295.5,9.6v2.2c0.3-1.2,1.5-2.4,3.4-2.4c0.2,0,0.5,0,0.7,0.1v1.9c-0.3,0-0.5-0.1-0.8-0.1c-2.1,0-3.3,1.5-3.3,3.9V21h-2V9.6
+                            H295.5z"></path> </g> <g class="st1"> <path d="M134,45h-2.1V28.7h2.1V45z"></path> <path d="M147.1,45h-2v-6.3c0-2.9-0.8-3.7-2.5-3.7c-2,0-2.9,1.7-2.9,3.4V45h-2V33.6h2v1.7c0.5-1.1,1.7-2,3.6-2
+                            c2.8,0,3.9,1.8,3.9,4.6V45z"></path> <path d="M160,45h-2v-6.3c0-2.9-0.8-3.7-2.5-3.7c-2,0-2.9,1.7-2.9,3.4V45h-2V33.6h2v1.7c0.5-1.1,1.7-2,3.6-2c2.8,0,3.9,1.8,3.9,4.6
+                            V45z"></path> <path d="M168,33.3c3.3,0,5.4,2.4,5.4,6c0,3.6-2.1,6-5.4,6c-3.4,0-5.4-2.3-5.4-6C162.6,35.7,164.6,33.3,168,33.3z M168,43.7
+                            c2,0,3.4-1.6,3.4-4.4c0-2.8-1.3-4.4-3.4-4.4c-2,0-3.4,1.6-3.4,4.4C164.6,42.1,166,43.7,168,43.7z"></path> <path d="M185,33.6L180.7,45h-2l-4-11.4h2.1l1.9,5.8c0.4,1.2,0.7,2.1,1.1,3.2h0c0.4-1.1,0.7-2.1,1.2-3.3l2-5.8H185z"></path> <path d="M186.3,37.2c0-2.5,1.8-3.8,4.6-3.8c2.3,0,4.4,0.6,4.4,3.4c0,0.6,0,1.3,0,1.9v3.8c0,0.9,0.2,1.2,0.8,1.2c0.2,0,0.3,0,0.5,0
+                            V45c-0.3,0.1-0.6,0.1-1.2,0.1c-1.1,0-1.8-0.4-1.8-1.5c-0.5,0.6-1.5,1.7-3.8,1.7c-2.3,0-4-1.2-4-3.4c0-2.4,2-3.1,4.5-3.5l1.5-0.2
+                            c1.1-0.2,1.6-0.4,1.6-1.2c0-1.2-0.6-2-2.6-2c-2,0-2.7,1-2.7,2.4L186.3,37.2z M192.7,43c0.5-0.5,0.8-1.1,0.8-2.2v-1.6
+                            c-0.1,0.1-0.2,0.2-0.9,0.4l-2.1,0.4c-1.6,0.4-2.4,0.8-2.4,2c0,1.3,1.1,1.9,2.4,1.9C191.4,43.8,192.1,43.5,192.7,43z"></path> <path d="M204.4,45c-0.5,0.2-1.1,0.3-2,0.3c-1.8,0-2.7-0.7-2.7-2.4v-7.8h-2.4v-1.5h2.4v-4.1l2-0.5v4.6h2.7v1.5h-2.7v7
+                            c0,1.2,0.3,1.5,1.3,1.5c0.6,0,1.1-0.1,1.4-0.2V45z"></path> <path d="M208.9,31.2h-2v-2.5h2V31.2z M208.9,45h-2V33.6h2V45z"></path> <path d="M217,33.3c3.3,0,5.4,2.4,5.4,6c0,3.6-2.1,6-5.4,6c-3.4,0-5.4-2.3-5.4-6C211.6,35.7,213.7,33.3,217,33.3z M217,43.7
+                            c2,0,3.4-1.6,3.4-4.4c0-2.8-1.3-4.4-3.4-4.4c-2,0-3.4,1.6-3.4,4.4C213.7,42.1,215,43.7,217,43.7z"></path> <path d="M234.7,45h-2v-6.3c0-2.9-0.8-3.7-2.5-3.7c-2,0-2.9,1.7-2.9,3.4V45h-2V33.6h2v1.7c0.5-1.1,1.7-2,3.6-2
+                            c2.8,0,3.9,1.8,3.9,4.6V45z"></path> <path d="M252.7,43c-1.2,1.6-2.9,2.3-4.9,2.3c-2.7,0-5.1-1.6-5.1-4.6c0-2.6,1.8-3.9,3.9-5c-0.5-0.6-1.8-2-1.8-3.8
+                            c0-1.8,1.4-3.5,3.9-3.5c2.6,0,3.9,1.6,3.9,3.3c0,1.8-1.1,3.2-3.1,4.4l3,3.6c0.3-0.8,0.6-1.8,0.7-3.1l1.8,0.5
+                            c-0.2,1.6-0.6,3-1.2,4.2l3.2,3.7h-2.6L252.7,43z M247.8,37.1c-1.5,0.9-3,1.8-3,3.5c0,1.9,1.6,2.9,3.2,2.9c1.4,0,2.7-0.7,3.5-1.9
+                            L247.8,37.1z M250.7,31.9c0-1.2-0.8-1.8-1.9-1.8c-1.1,0-1.9,0.6-1.9,1.7c0,1.4,1.4,2.6,1.6,2.9C249.8,34.1,250.7,33.1,250.7,31.9z"></path> <path d="M272.8,32.3c-1-1.2-2.5-2.1-4.3-2.1c-2.1,0-3.5,1.1-3.5,2.6s1,2.1,3,2.5l2.2,0.5c2.9,0.6,4.8,1.7,4.8,4.5
+                            c0,2.9-2.4,4.9-6.3,4.9c-3.6,0-5.8-1.8-6.7-3.6l1.8-1.2c0.6,1.5,2.4,2.9,5,2.9c2.6,0,3.9-1.2,3.9-2.9c0-1.6-1.2-2.2-3.2-2.6
+                            l-2.1-0.5c-2.5-0.6-4.7-1.5-4.7-4.5c0-2.7,2.5-4.6,5.8-4.6c3,0,4.9,1.4,5.9,2.6L272.8,32.3z"></path> <path d="M282.2,33.3c3.3,0,5.4,2.4,5.4,6c0,3.6-2.1,6-5.4,6c-3.4,0-5.4-2.3-5.4-6C276.8,35.7,278.9,33.3,282.2,33.3z M282.2,43.7
+                            c2,0,3.4-1.6,3.4-4.4c0-2.8-1.3-4.4-3.4-4.4c-2,0-3.4,1.6-3.4,4.4C278.8,42.1,280.2,43.7,282.2,43.7z"></path> <path d="M298,37.3c-0.5-1.4-1.4-2.3-3-2.3c-2.1,0-3.4,1.6-3.4,4.3c0,2.7,1.3,4.3,3.4,4.3c1.6,0,2.5-0.8,3-2.1l1.6,0.9
+                            c-0.7,1.5-2.2,2.9-4.7,2.9c-3.3,0-5.4-2.2-5.4-6c0-3.7,2.2-6,5.4-6c2.4,0,4,1.2,4.7,3.1L298,37.3z"></path> <path d="M304.1,31.2h-2v-2.5h2V31.2z M304.1,45h-2V33.6h2V45z"></path> <path d="M307.1,37.2c0-2.5,1.8-3.8,4.6-3.8c2.3,0,4.4,0.6,4.4,3.4c0,0.6,0,1.3,0,1.9v3.8c0,0.9,0.2,1.2,0.8,1.2c0.2,0,0.3,0,0.5,0
+                            V45c-0.3,0.1-0.6,0.1-1.2,0.1c-1.1,0-1.8-0.4-1.8-1.5c-0.5,0.6-1.5,1.7-3.8,1.7c-2.3,0-4-1.2-4-3.4c0-2.4,2-3.1,4.5-3.5l1.5-0.2
+                            c1.1-0.2,1.6-0.4,1.6-1.2c0-1.2-0.6-2-2.6-2c-2,0-2.7,1-2.7,2.4L307.1,37.2z M313.5,43c0.5-0.5,0.8-1.1,0.8-2.2v-1.6
+                            c-0.1,0.1-0.2,0.2-0.9,0.4l-2.1,0.4c-1.6,0.4-2.4,0.8-2.4,2c0,1.3,1.1,1.9,2.4,1.9C312.2,43.8,313,43.5,313.5,43z"></path> <path d="M321.6,45h-2V28.7h2V45z"></path> <path d="M333,45h-2.1V28.7h2.1V45z"></path> <path d="M343.7,45v-6.2c0-2.4-0.4-3.9-2.3-3.9c-1.8,0-2.7,1.5-2.7,3.7V45h-2V33.6h2v1.7c0.6-1.2,1.8-2,3.5-2c1.7,0,2.8,0.9,3.2,2.1
+                            c0.6-1.2,1.8-2.1,3.7-2.1c2.6,0,3.6,1.5,3.6,4.3V45h-2v-6.2c0-2.4-0.4-3.9-2.3-3.9c-1.8,0-2.7,1.5-2.7,3.7V45H343.7z"></path> <path d="M358.1,43.3v6.2h-2v-16h2v1.7c0.6-1.1,1.8-1.9,3.6-1.9c3,0,4.9,2.3,4.9,6c0,3.6-2,6-4.9,6
+                            C359.9,45.3,358.7,44.5,358.1,43.3z M361.3,43.6c2,0,3.3-1.6,3.3-4.3c0-2.8-1.3-4.3-3.3-4.3c-2,0-3.2,1.6-3.2,4.3
+                            C358,42,359.2,43.6,361.3,43.6z"></path> <path d="M368.8,37.2c0-2.5,1.8-3.8,4.6-3.8c2.3,0,4.4,0.6,4.4,3.4c0,0.6,0,1.3,0,1.9v3.8c0,0.9,0.2,1.2,0.8,1.2c0.2,0,0.3,0,0.5,0
+                            V45c-0.3,0.1-0.6,0.1-1.2,0.1c-1.1,0-1.8-0.4-1.8-1.5c-0.5,0.6-1.5,1.7-3.8,1.7c-2.3,0-4-1.2-4-3.4c0-2.4,2-3.1,4.5-3.5l1.5-0.2
+                            c1.1-0.2,1.6-0.4,1.6-1.2c0-1.2-0.6-2-2.6-2c-2,0-2.7,1-2.7,2.4L368.8,37.2z M375.2,43c0.5-0.5,0.8-1.1,0.8-2.2v-1.6
+                            c-0.1,0.1-0.2,0.2-0.9,0.4l-2.1,0.4c-1.6,0.4-2.4,0.8-2.4,2c0,1.3,1.1,1.9,2.4,1.9C373.9,43.8,374.7,43.5,375.2,43z"></path> <path d="M389,37.3c-0.5-1.4-1.4-2.3-3-2.3c-2.1,0-3.4,1.6-3.4,4.3c0,2.7,1.3,4.3,3.4,4.3c1.6,0,2.5-0.8,3-2.1l1.6,0.9
+                            c-0.7,1.5-2.2,2.9-4.7,2.9c-3.3,0-5.4-2.2-5.4-6c0-3.7,2.2-6,5.4-6c2.4,0,4,1.2,4.7,3.1L389,37.3z"></path> <path d="M398.8,45c-0.5,0.2-1.1,0.3-2,0.3c-1.8,0-2.7-0.7-2.7-2.4v-7.8h-2.4v-1.5h2.4v-4.1l2-0.5v4.6h2.7v1.5h-2.7v7
+                            c0,1.2,0.3,1.5,1.3,1.5c0.6,0,1.1-0.1,1.4-0.2V45z"></path> </g> <g> <path d="M23.5,25v-2.2c-2.2,4.4-5.8,6.3-9.9,6.3c-6.6,0-13-4.8-13-12c0-6.5,5.7-13.3,14.9-13.3c6.6,0,16,7.7,16,19.6
+                            c0,13.3-10.2,22.9-18.2,22.9c-6.5,0-11.4-5.1-11.4-9.1c0-2.6,1.9-4.6,4.4-4.6c2.1,0,4.1,1.2,4.1,3.8c0,1.8-0.9,2.7-1.8,3.3
+                            c-1.1,0.7-2.2,0.9-2.2,1.9c0,1.8,3,3.8,6.8,3.8C19.4,45.3,23.5,40.6,23.5,25z M15.5,27.7c4.2,0,7.3-3.7,7.3-11.5s-3-11.5-7.3-11.5
+                            S8.3,8.3,8.3,16.2S11.3,27.7,15.5,27.7z"></path> <path d="M42.9,4.8c-4.4,0-7.1,2.2-7.1,4.4c0,1.2,0.9,1.5,2.1,2.1s2.4,1.4,2.4,3.5c0,2.2-1.9,3.7-4,3.7c-2.5,0-4.7-1.8-4.7-4.7
+                            c0-4.9,4.4-10.2,12.5-10.2c8.8,0,15.2,4.7,15.2,12.3c0,5.4-3,8.3-7.2,10.4c-7.3,3.8-18.6,2.6-19.6,15.3c1.4-3.4,5.2-5.7,8.9-5.7
+                            c4,0,8.1,3.7,11.7,3.7c4.2,0,5.4-3,5.4-7.6v-3.6h1V32c0,9.3-4.5,14.1-10,14.1c-5.8,0-9.3-6-13.7-6c-1.6,0-3.4,1.8-3.4,5.4h-0.9
+                            c-1-22.5,19.6-12.2,19.6-29.9C51.1,7.7,47.6,4.8,42.9,4.8L42.9,4.8z"></path> <path d="M57.4,44.7h5.5V5.2h-5.5V4.3H71l17.7,26V5.2h-5.5V4.3h12v0.9h-5.5v41.4h-0.5l-25.3-38v36.1h5.5v0.9h-12
+                            C57.4,45.6,57.4,44.7,57.4,44.7z"></path> <path d="M97.7,44.7h5.2V28.2l-12.8-23h-4.8V4.3h19.5v0.9h-5.1l11,20.2l9.9-20.2H116V4.3h10.4v0.9h-4.7L111,26.6v18.1h5.2v0.9H97.7
+                            V44.7L97.7,44.7z"></path> </g> </svg></div>
+</div>
+</div>
+</section>
+</div>
+<!-- /End FOOTER -->
+

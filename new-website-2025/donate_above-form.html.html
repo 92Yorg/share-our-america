@@ -1,0 +1,1023 @@
+<style type="text/css">
+    body {
+        background-color: #fff;
+        min-height: 100vh;
+    }
+
+    .share-wrapper h1 {
+        text-transform: uppercase;
+    }
+
+    #pnl_emailSignup {
+        display: none!important;
+    }
+
+    .bg-red-shape {
+        background-image: url(/92StreetY/media/img/Innovation/share-our-america-red-shape.svg);
+        background-position: top center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .bg-ltblue-shape {
+        background-image: url(/92StreetY/media/img/Innovation/share-our-america-soft-blue-shape.svg);
+        background-position: top center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .hero-panel__suffix {
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #fff;
+        line-height: 1.25;
+    }
+
+    #hero-image1 {
+        position: relative;
+        z-index: 2;
+    }
+
+    #hero-image2 {
+        margin-top: -80px;
+        position: relative;
+        z-index: 3;
+        width: 60%;
+        display: inline-block;
+    }
+
+    @media (min-width: 50em) {
+        #hero-image2 {
+            width: auto;
+            margin-right: -20px;
+        }
+    }
+
+    @media (min-width: 70em) {
+        #hero-image2 {
+            margin-right: -50px;
+        }
+
+        #body-image1 {
+            margin-left: -50px;
+        }
+
+        #body-image2 {
+            margin-right: -50px;
+        }
+    }
+
+
+    .page-layout {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    .page-layout-padding-top {
+        padding-top: 1em;
+    }
+
+    .u-padded-bottom {
+        padding-bottom: 1em;
+    }
+
+    @media (min-width: 50em) {
+        .u-padded-bottom {
+            padding-bottom: 2em;
+        }
+    }
+
+    .u-ratio {
+        overflow: hidden;
+    }
+
+    @media (min-width: 30em) {
+        .padding-top-more {
+            padding-top: 3em;
+        }
+    }
+
+    @media (min-width: 50em) {
+        .padding-top-more {
+            padding-top: 4em;
+        }
+    }
+
+    .o-figure {
+        margin-bottom: 0;
+    }
+
+    @media (min-width: 30em) {
+
+        .o-grid--2up, .o-grid--4up {
+            margin-left: -20px;
+        }
+
+        .o-grid--2up .o-grid__item,
+        .o-grid--4up .o-grid__item {
+            margin-left: 10px;
+            padding-left: 10px;
+            margin-bottom: 20px;
+            width: calc(50% - 20px);
+            margin: 0 0 0 20px;
+            padding-left: 0;
+        }
+    }
+
+    @media (min-width: 50em) {
+
+        .o-grid--2up .o-grid__item,
+        .o-grid--4up .o-grid__item {
+            margin-bottom: 0;
+        }
+    }
+
+    div {
+        --red1dk: #811b1e;
+        --red2: #d12329;
+        --red3lt: #e66775;
+        --red4lt: #ec8c80;
+        --blue1: #055ca0;
+        --blue2: #5b84c1;
+        --blue3: #81b7e0;
+        --slategreydark: #1d2743;
+        --grey: #f0f0f0;
+        --grey2: #d1d2d2;
+        --92nyblue: #8eaae2;
+        --92nypink: #edabba;
+        --92nyred: #ff5447;
+        --92nywine: #990d61;
+        --92nygreen: #21805e;
+    }
+
+    .share-wrapper {
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* @media (min-width: 50em) {
+        .share-wrapper h2 {
+            font-size: 2.5rem;
+        }
+    } */
+
+    .share-wrapper h1,
+    .fonts-loaded .share-wrapper h1 {
+        font-size: 1.5rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    
+    .share-wrapper h2,
+    .fonts-loaded .share-wrapper h2 {
+        font-size: 1.375rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-bottom: 0.25em;
+    }
+
+    .share-wrapper h3,
+    .fonts-loaded .share-wrapper h3 {
+        font-size: 1.25rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-bottom: 0.25em;
+        text-align: center;
+    }
+
+    @media (min-width: 50em) {
+
+        .share-wrapper h1,
+        .fonts-loaded .share-wrapper h1  {
+            font-size: 1.75rem;
+        }
+
+        .share-wrapper h2,
+        .fonts-loaded .share-wrapper h2  {
+            font-size: 1.5rem;
+        }
+
+        .share-wrapper h3,
+        .fonts-loaded .share-wrapper h3  {
+            font-size: 1.25rem;
+        }
+    }
+
+    @media (min-width: 70em) {
+
+        .share-wrapper h1,
+        .fonts-loaded .share-wrapper h1 {
+            font-size: 2.5rem;
+        }
+
+        .share-wrapper h2,
+        .fonts-loaded .share-wrapper h2 {
+            font-size: 2rem;
+        }
+
+        .share-wrapper h3,
+        .fonts-loaded .share-wrapper h3 {
+            font-size: 1.75rem;
+        }
+    }
+
+    .share-wrapper p,
+    .share-wrapper li {
+        font-size: 1rem;
+    }
+
+    @media (min-width: 70em) {
+        .share-wrapper p,
+        .share-wrapper li {
+            font-size: 1.125rem;
+        }
+    }
+
+    .share-wrapper p.page-intro-2 {
+        font-size: 1.375rem;
+    }
+
+    @media (min-width: 50em) {
+        .share-wrapper p.page-intro-2 {
+            font-size: 1.625rem;
+        }
+    }
+
+    .share-wrapper h2.page-intro-1 {
+        text-transform: uppercase;
+        line-height: 1.25;
+    }
+
+    #share-info {
+        background: var(--92nyblue);
+        padding: 16px 20px;
+    }
+
+    @media (min-width: 40em) {
+        #share-info {
+            margin-left: 10px;
+            display: inline-block;
+        }
+    }
+
+    @media (min-width: 50em) {
+        #share-info {
+            margin-left: 20px;
+        }
+    }
+
+    @media (min-width: 70em) {
+        #share-info {
+            margin-left: 40px;
+        }
+    }
+
+    .share-wrapper #share-info .btn {
+        background-color: var(--blue3);
+        color: var(--slategreydark);
+    }
+
+    .share-wrapper #share-info .btn:hover {
+        background-color: var(--blue2)
+    }
+
+    #share-top {
+        position: relative;
+    }
+
+
+    #share-header {
+        /* color: var(--blue1); */
+        /* background-color: var(--grey); */
+        position: relative;
+        border-bottom: 1px solid #000;
+    }
+
+    #share-header .o-grid {
+        align-items: center;
+    }
+
+    .share-logo-container {
+        display: block;
+        text-align: center;
+    }
+
+    #share-header img.share-logo {
+        width: 100%;
+        z-index: 3;
+        max-width: 250px;
+        display: inline-block;
+        padding: 10px;
+    }
+
+   ul.share-nav, .share-nav {
+        padding: 10px 0;
+        position: relative;
+        z-index: 3;
+        text-align: center;
+    }
+
+    ul.share-nav li, .share-nav div {
+        display: inline-block;
+        padding: 2px 0;
+        margin-left: 1em;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+    ul.share-nav li a {
+        position: relative;
+        z-index: 3;
+    }
+
+    ul.share-nav li a:hover::after {
+        content: '\00A0';
+        display: block;
+        background: #d5d5d5;
+        width: calc(100% + 20px);
+        height: 50%;
+        position: absolute;
+        bottom: 0;
+        left: -10px;
+        z-index: -1;
+    }
+
+    #share-preheader ul.share-nav li a {
+        color: var(--92nypink);
+        font-weight: 900;
+    }
+
+    #share-preheader ul.share-nav li a:hover {
+        color: #d5d5d5;
+    }
+
+    #share-preheader ul.share-nav li a:hover::after {
+        display: none;
+    }
+
+    .share-nav-highlight a,
+    a.share-nav-highlight  {
+        font-weight: bold;
+        position: relative;
+        z-index: 3;
+    }
+
+    .share-nav-highlight a::after,
+    a.share-nav-highlight::after {
+        content: '\00A0';
+        display: block;
+        background: #edabba;
+        width: calc(100% + 20px);
+        height: 50%;
+        /* opacity: .5; */
+        position: absolute;
+        bottom: 0;
+        left: -10px;
+        z-index: -1;
+    }
+
+    .share-nav-highlight a:hover::after,
+    a.share-nav-highlight:hover::after {
+        background: #d5d5d5;
+    }
+
+    @media (min-width: 30em) {
+        .share-logo-container {
+            text-align: left;
+        }
+
+        ul.share-nav {
+            text-align: right;
+        }
+
+        #share-header img.share-logo {
+            width: 40vw;
+            max-width: 220px;
+            padding-left: 0;
+            display: block;
+        }
+    }
+
+    @media (min-width: 30em) {
+        #share-header .o-grid--2up .o-grid__item:nth-of-type(odd) {
+            width: calc(40% - 20px);
+        }
+
+        #share-header .o-grid--2up .o-grid__item:nth-of-type(even) {
+            width: calc(60% - 20px);
+        }
+    }
+
+    @media (min-width: 50em) {
+        .share-nav-highlight a::after {
+            line-height: 12px;
+        }
+        #share-header img.share-logo {
+            max-width: 260px;
+        }
+    }
+
+    @media (min-width: 62em) {
+        #share-header .o-grid--2up .o-grid__item:nth-of-type(odd) {
+            width: calc(30% - 20px);
+        }
+
+        #share-header .o-grid--2up .o-grid__item:nth-of-type(even) {
+            width: calc(70% - 20px);
+        }
+        ul.share-nav li {
+            font-size: 125%;
+            margin-left: 2em;
+        }
+        #share-header img.share-logo {
+            max-width: 280px;
+        }
+    }
+
+    @media (min-width: 80em) {
+        .share-logo-container {
+            position: relative;
+            left: -4em;
+        }
+        #share-header img.share-logo {
+            max-width: 280px;
+        }
+    }
+
+    @media (min-width: 90em) {
+        #share-header img.share-logo {
+            max-width: 300px;
+        }
+    }
+
+    /* #share-hero h2.share-date {
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+
+    @media (min-width: 30em) {
+        #share-hero h2.share-date {
+            font-size: 2rem;
+            margin-left: -40px;
+        }
+    }
+
+    @media (min-width: 50em) {
+        #share-hero h2.share-date {
+            font-size: 2.5rem;
+            margin-left: -50px;
+        }
+    }
+
+    @media (min-width: 70em) {
+        #share-hero h2.share-date {
+            font-size: 3rem;
+            margin-left: -50px;
+        }
+    } */
+
+
+
+    @media (min-width: 50em) {
+        #share-intro .o-2col__primary,
+        #share-about-page .o-2col__primary  {
+            width: 57%;
+        }
+
+        #share-intro .o-2col__secondary,
+        #share-about-page .o-2col__secondary {
+            width: 40%;
+        }
+    }
+
+
+    @media (min-width: 50em) {
+        .body-2col .o-2col__primary {
+            width: 72%;
+        }
+
+        .body-2col .o-2col__secondary {
+            width: 25%;
+        }
+    }
+
+
+    #share-about .o-grid__item {
+        position: relative;
+    }
+
+    #share-intro {
+        position: relative;
+    }
+
+    @media (min-width: 70em) {
+        #share-intro h2.page-intro-1 {
+            margin-top: 1em;
+        }
+    }
+
+    /* #share-main {
+        color: var(--slategreydark);
+    } */
+
+    #share-main .u-constrained {
+        position: relative;
+    }
+
+    #share-main .o-grid {
+        align-items: center;
+    }
+
+    #share-inclusions {
+        color: var(--blue1);
+    }
+
+    #share-inclusions .o-grid__item:first-child {
+        position: relative;
+    }
+
+    #share-inclusions .o-grid__item:nth-child(2) {
+        position: relative;
+        z-index: 2;
+    }
+
+    @media (min-width: 30em) {
+        #share-inclusions .o-grid__item:nth-child(2) {
+            margin-left: -40px;
+        }
+    }
+
+    @media (min-width: 50em) {
+        #share-inclusions .o-grid__item:nth-child(2) {
+            margin-left: -50px;
+        }
+    }
+
+    #share-inclusions2 {
+        color: var(--blue1);
+    }
+
+    #share-inclusions2 .u-constrained {
+        background-color: var(--red4lt);
+        padding: 1em;
+    }
+
+    @media (min-width: 50em) {
+        #share-inclusions2 .u-constrained {
+            padding: 2em;
+        }
+    }
+
+    #share-inclusions2 li {
+        margin-bottom: .5em;
+    }
+
+    #share-form {
+        overflow: hidden;
+    }
+
+    #share-form .u-constrained {
+        position: relative;
+        margin-bottom: 2em;
+    }
+
+    #share-form p {
+        color: var(--blue1);
+    }
+
+    .share-wrapper #share-form .FormPanel {
+        color: var(--slategreydark);
+    }
+
+    .share-wrapper #share-form .FormPanel p {
+        font-size: 1rem;
+    }
+
+    .share-wrapper .FormButton.btn {
+        color: #000;
+        position: relative;
+        z-index: 3;
+        display: inline;
+        font-size: 1.75rem;
+        line-height: 1.25;
+        padding: 0 10px;
+        border-radius: 0;
+        background: #fff url('/92StreetY/media/img/Innovation/share-our-america-underline-bg.png');
+        background-position: center center;
+        background-repeat: repeat;
+    }
+
+    .share-wrapper .FormButton.btn:hover {
+        color: #000;
+        background: #fff url('/92StreetY/media/img/Innovation/share-our-america-underline-bg-hover.png');
+        background-position: center center;
+    }
+
+    .share-wrapper #share-form .btn {
+        background-color: var(--blue3);
+        color: var(--slategreydark);
+        width: 100%;
+    }
+
+    .share-wrapper #share-form .btn:hover {
+        background-color: var(--blue2)
+    }
+
+    .share-wrapper .logo {
+        background: none;
+    }
+
+    .share-wrapper .case-study-item {
+        margin-bottom: 1em;
+    }
+
+    @media (max-width: 49.99em) {
+        .share-wrapper .case-study-item {
+            display: block;
+        }
+        .share-wrapper .case-study-item .subscription-item.has-image .subscription-item__media {
+            width: auto;
+        }
+    }
+
+    @media (max-width: 29.99em) {
+        .share-wrapper .case-study-item.subscription-item.has-image .subscription-item__media {
+            width: auto;
+        }
+    }
+
+    @media (min-width: 30em) and (max-width: 49.99em) {
+        .share-wrapper .case-study-item.subscription-item.has-image .subscription-item__media {
+            width: auto;
+            padding: 1.25%;
+        }
+    }
+
+    .share-wrapper .case-study-item .subscription-item__title {
+        text-transform: none;
+        text-align: left;
+    }
+
+    .case-study-header {
+        text-align: center;
+    }
+
+    .share-wrapper.case-study h1 {
+        text-transform: none;
+        margin-bottom: 0.5em;
+    }
+
+    .share-wrapper .image-slider__item {
+        width: 100%;
+        background: #fff;
+        padding: 1em;
+        border: 2px solid;
+    }
+
+    .share-wrapper .image-slider__text {
+        margin-top: 1em;
+    }
+
+    .share-wrapper .image-slider__text p {
+        font-style: italic;
+    }
+
+    @media (min-width: 30em) {
+        .share-wrapper .image-slider__item {
+            display: flex;
+            align-items: center;
+        }
+        .share-wrapper .image-slider__media {
+            width: 50%;
+            max-width: 400px;
+            height: fit-content;
+        }
+        .share-wrapper .image-slider__text {
+            margin-top: 0;
+            margin-left: 1em;
+        }
+        .share-wrapper .image-slider__text p {
+            font-size: 120%;
+        }
+        .share-wrapper .image-slider__text cite {
+            text-align: left;
+        }    
+    }
+
+    .subscription-item__description {
+        display: block;
+    }
+
+    #share-footer {
+        background-color: #000;
+        color: #fff;
+        position: relative;
+        z-index: 3;
+        overflow: hidden;
+    }
+
+    #share-footer .u-constrained {
+        position: relative;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    #share-footer p {
+        font-size: 1.125rem;
+        margin-bottom: 1em;
+    }
+
+    #share-footer ul {
+        align-items: center;
+    }
+
+    .footer-logo-inner {
+        width: 100%;
+        max-width: 350px;
+        color: #fff;
+        display: inline-block;
+    }
+
+    .footer-logo g {
+        fill: #fff;
+    }    
+
+    .join-us-footer {
+        /* background-color: var(--grey); */
+        border-top: 1px solid #000;
+    }
+
+    .join-us-footer h2 {
+        margin-bottom: 0;
+    }
+
+    .btn-outline {
+        padding: .5em 1em;
+        border: 1px solid;
+        display: inline-block;
+    }
+
+    .btn-outline:hover {
+        color: var(--red4lt);
+    }
+
+
+    /* .blue3-shape1 {
+  background-color: var(--blue3);
+  -webkit-mask: url(/92StreetY/media/img/Institutional/Share-Our-America/shareAm-shape1.svg) no-repeat 50% 50%;
+  mask: url(/92StreetY/media/img/Institutional/Share-Our-America/shareAm-shape1.svg) no-repeat 50% 50%;
+  position: absolute;
+  z-index: 1;
+}
+ */
+
+    .shape-bg3 {
+        position: absolute;
+        height: 120%;
+        bottom: -1em;
+        left: -10%;
+        opacity: 0.4;
+        z-index: -1;
+    }
+
+    @media (min-width: 50em) {
+        .shape-bg3 {
+            bottom: -2em;
+        }
+    }
+
+    .shape-bg3 polygon {
+        fill: var(--red3lt);
+    }
+
+    .shape-bg1 {
+        position: absolute;
+        height: 200%;
+        top: -25%;
+        left: -50%;
+        opacity: 0.3;
+    }
+
+    @media (max-width: 49.99em) {
+        .shape-bg1 {
+            display: none;
+        }
+    }
+
+    @media (min-width: 50em) {
+        .shape-bg1 {
+            left: -20%;
+        }
+    }
+
+    .shape-bg1 polygon {
+        fill: var(--blue2);
+    }
+
+    .shape-bg5 {
+        position: absolute;
+        height: 110%;
+        bottom: 0%;
+        right: -10%;
+        opacity: 0.5;
+        z-index: -1;
+    }
+
+    .shape-bg5 polygon {
+        fill: var(--blue3);
+    }
+
+    .shape-bg2 {
+        position: absolute;
+        height: 300%;
+        right: -22%;
+        top: 15%;
+        z-index: 0;
+        opacity: 0.5;
+    }
+
+    /* @media (min-width: 50em) {
+        .shape-bg2 {
+            height: 50%;
+            right: 5%;
+        }
+    } */
+
+    .shape-bg2 polygon {
+        fill: var(--red4lt);
+    }
+
+    .shape-bg6 {
+        position: absolute;
+        height: 20%;
+        bottom: -10%;
+        right: 10%;
+        mix-blend-mode: multiply;
+        opacity: 0.6;
+    }
+
+    @media (max-width: 799.99px) {
+        .shape-bg6 {
+            display: none;
+        }
+    }
+
+    .shape-bg6 polygon {
+        fill: var(--red3lt);
+    }
+
+    .text-blend-wrapper {
+        position: relative;
+        z-index: 2;
+        /* mix-blend-mode: multiply; */
+    }
+
+    .quote-slider .swiper-slide .pull-quote {
+        background-color: var(--92nywine);
+        color: #fff;
+        display: flex;
+        align-items: center;
+    }
+
+    .image-slider__inner {
+        padding-bottom: 35px;
+    }
+
+    @media (min-width: 56.25em) {
+        .swiper-slide {
+            padding-bottom: 0;
+        }
+    }
+    
+    .quote-slider__inner {
+        padding-bottom: 30px;
+    }
+    
+    @media (min-width: 62.5em) {
+        .quote-slider__inner {
+            padding-bottom: 30px;
+        }
+    }
+
+    .quote-slider .swiper-pagination {
+        bottom: 0;
+    }
+
+    .swiper-pagination-bullet {
+        width: 15px;
+        height: 15px;
+        opacity: unset;
+    }
+
+    /* .quote-slider .swiper-slide:nth-child(odd) .pull-quote {
+        background-color: var(--red2);
+    } */
+
+    .pull-quote__opening {
+        font-size: 7rem;
+        top: 0px;
+    }
+
+    .quote-slider cite {
+        font-style: italic;
+    }
+
+    .logo-grid h3 {
+        margin: 0;
+    }
+
+    .logo__media {
+        padding: 0;
+        height: 120px;
+    }
+
+    @media (min-width: 30em) {
+        .logo__media {
+            height: 140px;
+        }
+    }
+    
+    @media (min-width: 50em) {
+        .logo__media {
+            padding: 0;
+        }
+    }
+
+    @media (min-width: 50em) {
+        .page-layout-tall {
+            padding-top: 3em;
+            padding-bottom: 3em;
+        }
+    }
+
+    .o-grid--2up .o-grid__item.bg-box {
+        color: #fff;
+        padding: 15px 15px 0 15px;
+    }
+    
+    .bg-box.bg-box_green {
+        background-color: var(--92nygreen);
+    }
+    .bg-box.bg-box_wine {
+        background-color: var(--92nywine);
+    }
+</style>
+
+<!-- HEADER -->
+<section class="u-tone-background-dark" id="share-preheader">
+<div class="u-constrained u-constrained--narrow">
+<ul class="share-nav">
+	<li id="nav-toolkit"><b>NEW!</b> <a href="/shareouramerica/toolkit"><i>Toolkit for Organizations</i></a></li>
+</ul>
+</div>
+</section>
+
+<section class="u-tone-background-white" id="share-header">
+<div class="u-constrained u-constrained--narrow">
+<ul class="o-grid o-grid--2up">
+	<li class="o-grid__item"><a class="share-logo-container" href="/shareouramerica"><img alt="Share Our America logo" class="share-logo" src="/92StreetY/media/img/Innovation/share-our-america_Logo_Wine.svg"> </a></li>
+	<li class="o-grid__item">
+	<ul class="share-nav">
+		<li id="nav-about"><a href="/shareouramerica/about">About</a></li>
+		<li id="nav-impact"><a href="/shareouramerica/impact">Impact</a></li>
+		<li id="nav-case-studies"><a href="/shareouramerica/case-studies">Case Studies</a></li>
+		<li id="nav-join"><a href="/shareouramerica/join-us">Join Us</a></li>
+		<li class="share-nav-highlight" id="nav-donate"><a href="/shareouramerica/Donate">Donate</a></li>
+	</ul>
+	</li>
+</ul>
+</div>
+</section>
+<!-- /End HEADER -->
+
+<!-- BODY -->
+
+<section class="share-wrapper page-layout">
+    <div class="u-constrained u-constrained--narrow">
+    <div class="page-layout">
+    <h1>Donate</h1>
+    </div>
+    
+    <div class="page-layout">
+    <figure class="o-figure" id="hero-image1" itemscope="" itemtype="http://schema.org/ImageObject">
+    <div><img alt="Will Lauderback and a participant smiling" class="o-figure__media" src="/92StreetY/media/img/Innovation/share-our-america-will-and-participant.jpg"></div>
+    </figure>
+    </div>
+    
+    <div class="page-layout u-constrained u-constrained--skinny u-txt-align-center">
+    <h2>Your support now will magnify our impact tomorrow.</h2>
+    
+    <p>When you give to Share Our America, you’re ensuring our work bridging divides and rebuilding trust can scale across America. Your donation will directly support on-the-ground costs for gatherings, events, cohort leadership stipends, and critical organizational and staff support.</p>
+    </div>
+    
+    
+    
+    
+    </div>
+    </section>
+
+<!-- /End BODY -->
